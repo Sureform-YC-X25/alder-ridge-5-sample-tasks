@@ -1,6 +1,6 @@
 # Alder Ridge Sample Tasks
 
-A runnable five-task company environment for evaluating agents on long-horizon corporate-finance work. Alder Ridge Mechanical is a simulated specialty mechanical contractor with project-based accounting, percentage-of-completion revenue recognition, WIP, change orders, service operations, treasury, and contractor-accounting records.
+A runnable company environment for evaluating agents on long-horizon corporate-finance work. Alder Ridge Mechanical is a simulated specialty mechanical contractor with project-based accounting, percentage-of-completion revenue recognition, WIP, change orders, service operations, treasury, and contractor-accounting records.
 
 The sample contains:
 
