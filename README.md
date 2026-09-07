@@ -35,7 +35,7 @@ tasks/
     source_manifest.json
 ```
 
-Open `tasks/` to review the five assignments. Open `environment/seed/sources/` to inspect their shared spreadsheets, documents, presentations, PDFs, emails, and operating extracts. See [`SEED_DATA_INVENTORY.md`](SEED_DATA_INVENTORY.md) for the reproducible source and accounting inventory. This repository starts with a clean publication history, so files removed from the larger authoring environment are not recoverable from earlier commits here.
+Open `tasks/` to review the five assignments. Open `environment/seed/sources/` to inspect their shared spreadsheets, documents, presentations, PDFs, emails, and operating extracts. This repository starts with a clean publication history, so files removed from the larger authoring environment are not recoverable from earlier commits here.
 
 ## Run the environment
 
