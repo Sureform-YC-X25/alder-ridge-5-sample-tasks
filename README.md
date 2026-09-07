@@ -10,8 +10,6 @@ The sample contains:
 - FY27 backlog burn and labor-capacity model
 - June executive performance review
 
-The five tasks share one coherent company world. There are no task-specific duplicate versions of company records or seed overlays. The package contains the exact 53-file source closure needed by these assignments, including shared lineage records, plus the complete accounting snapshot. It does not include unrelated task definitions, graders, reference answers, or source packages. The source world and accounting snapshot are reset into an isolated workspace for every run.
-
 All tasks and source files were authored by domain experts and informed by Sureform's partner engagements with a specialty mechanical contractor. Alder Ridge Mechanical, including its personnel, counterparties, communications, transactions, and records, is simulated. The package does not contain identifiable client, partner, employee, insurance, banking, or customer data.
 
 ## Repository structure
@@ -23,8 +21,8 @@ environment/
   seed/
     accounting.db       simulated company accounting system
     ACCOUNTING_MCP.md   accounting records and MCP tool reference
-    controls/           hidden integrity and semantic-verifier controls
-    sources/            curated five-task company document world
+    controls/           
+    sources/            
 
 tasks/
   <task-slug>/
@@ -34,8 +32,6 @@ tasks/
     gold.json
     source_manifest.json
 ```
-
-Open `tasks/` to review the five assignments. Open `environment/seed/sources/` to inspect their shared spreadsheets, documents, presentations, PDFs, emails, and operating extracts. This repository starts with a clean publication history, so files removed from the larger authoring environment are not recoverable from earlier commits here.
 
 ## Run the environment
 
