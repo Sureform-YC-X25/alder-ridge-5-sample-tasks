@@ -1,0 +1,491 @@
+{
+  "accounting_control": {
+    "base_cutoff": "2026-05-31",
+    "billing_population": "non-voided customer invoices",
+    "contract_rollforward": "original contract plus approved change orders",
+    "cutoff": "2026-06-30",
+    "rows": [
+      {
+        "billings": {
+          "activity": 189869.94,
+          "base": 8512152.76,
+          "close": 8702022.7
+        },
+        "current_contract": {
+          "activity": 742500.0,
+          "base": 8650000.0,
+          "close": 9392500.0
+        },
+        "job_cost": {
+          "activity": 182853.95,
+          "base": 6926546.05,
+          "close": 7109400.0
+        },
+        "project_id": "ARM-2318"
+      },
+      {
+        "billings": {
+          "activity": 79513.55,
+          "base": 4296079.58,
+          "close": 4375593.13
+        },
+        "current_contract": {
+          "activity": 286000.0,
+          "base": 5240000.0,
+          "close": 5526000.0
+        },
+        "job_cost": {
+          "activity": 161892.13,
+          "base": 3569607.87,
+          "close": 3731500.0
+        },
+        "project_id": "ARM-2409"
+      },
+      {
+        "billings": {
+          "activity": 184479.06,
+          "base": 5930347.24,
+          "close": 6114826.3
+        },
+        "current_contract": {
+          "activity": 612000.0,
+          "base": 9875000.0,
+          "close": 10487000.0
+        },
+        "job_cost": {
+          "activity": 318508.0,
+          "base": 4891292.0,
+          "close": 5209800.0
+        },
+        "project_id": "ARM-2417"
+      },
+      {
+        "billings": {
+          "activity": 170948.0,
+          "base": 4964633.06,
+          "close": 5135581.06
+        },
+        "current_contract": {
+          "activity": 330000.0,
+          "base": 11250000.0,
+          "close": 11580000.0
+        },
+        "job_cost": {
+          "activity": 398541.55,
+          "base": 3885358.45,
+          "close": 4283900.0
+        },
+        "project_id": "ARM-2506"
+      }
+    ],
+    "total": {
+      "billings": {
+        "activity": 624810.55,
+        "base": 23703212.64,
+        "close": 24328023.19
+      },
+      "current_contract": {
+        "activity": 1970500.0,
+        "base": 35015000.0,
+        "close": 36985500.0
+      },
+      "job_cost": {
+        "activity": 1061795.63,
+        "base": 19272804.37,
+        "close": 20334600.0
+      }
+    }
+  },
+  "commercial_recovery_sensitivity": {
+    "basis": "Sensitivity only; pending commercial revenue is not authorized, booked, or included in the June 30 close.",
+    "projects": [
+      {
+        "close_eac": 7388200.0,
+        "hypothetical_contract": 9460500,
+        "hypothetical_margin": 2072300.0,
+        "hypothetical_margin_rate": 0.21904761904761905,
+        "incremental_margin": 68000,
+        "pending_revenue": 68000,
+        "project_id": "ARM-2318"
+      },
+      {
+        "close_eac": 4440696.69,
+        "hypothetical_contract": 5711000,
+        "hypothetical_margin": 1270303.31,
+        "hypothetical_margin_rate": 0.22243097706181056,
+        "incremental_margin": 185000,
+        "pending_revenue": 185000,
+        "project_id": "ARM-2409"
+      },
+      {
+        "close_eac": 8532800.0,
+        "hypothetical_contract": 10869000,
+        "hypothetical_margin": 2336200.0,
+        "hypothetical_margin_rate": 0.21494157696200203,
+        "incremental_margin": 382000,
+        "pending_revenue": 382000,
+        "project_id": "ARM-2417"
+      },
+      {
+        "close_eac": 9224900.0,
+        "hypothetical_contract": 11876000,
+        "hypothetical_margin": 2651100.0,
+        "hypothetical_margin_rate": 0.22323172785449646,
+        "incremental_margin": 296000,
+        "pending_revenue": 296000,
+        "project_id": "ARM-2506"
+      }
+    ],
+    "total": {
+      "close_eac": 29586596.69,
+      "hypothetical_contract": 37916500,
+      "hypothetical_margin": 8329903.31,
+      "hypothetical_margin_rate": 0.21969072329988262,
+      "incremental_margin": 931000,
+      "pending_revenue": 931000
+    }
+  },
+  "decision_control": {
+    "close_case_eac": 29586596.69,
+    "close_case_margin": 7398903.31,
+    "close_release_decision": "Release ARM-2318 with monitoring after the completed estimate review; hold ARM-2409, ARM-2417, and ARM-2506 pending Controller review.",
+    "largest_overlay_project": "ARM-2417",
+    "margin_impact": -715196.69,
+    "pending_revenue_included": false,
+    "pm_case_eac": 28871400.0,
+    "pm_case_margin": 8114100.0,
+    "review_queue": [
+      "ARM-2409",
+      "ARM-2417",
+      "ARM-2506"
+    ],
+    "review_required_count": 3
+  },
+  "decision_rows": [
+    {
+      "close_case_eac": 7388200.0,
+      "close_case_margin": 2004300.0,
+      "close_disposition": "Release with monitoring",
+      "commercial_reference": "PCO-029",
+      "controller_review_required": false,
+      "margin_impact": -105000.0,
+      "pending_revenue_included": false,
+      "pm_case_eac": 7283200.0,
+      "pm_case_margin": 2109300.0,
+      "policy_reference": "FIN-REV-04",
+      "project_id": "ARM-2318",
+      "required_follow_up": "Project Accounting and the PM must reconcile the $60,000 invoice-over-forecast variance on CRS-10942 / PO-2318-102, preserve the completed Controller estimate review, and monitor the item through ordinary close sign-off while PCO-029 recovery remains excluded.",
+      "required_follow_up_tokens": [
+        [
+          "crs-10942",
+          "crs 10942",
+          "po-2318-102",
+          "po 2318 102"
+        ],
+        [
+          "variance",
+          "overrun",
+          "60,000",
+          "60k"
+        ],
+        [
+          "pm",
+          "project accounting"
+        ],
+        [
+          "controller",
+          "review",
+          "sign-off",
+          "signoff",
+          "monitor"
+        ]
+      ]
+    },
+    {
+      "close_case_eac": 4440696.69,
+      "close_case_margin": 1085303.31,
+      "close_disposition": "Hold for controller review",
+      "commercial_reference": "PCO-011",
+      "controller_review_required": true,
+      "margin_impact": -125196.69,
+      "pending_revenue_included": false,
+      "pm_case_eac": 4315500.0,
+      "pm_case_margin": 1210500.0,
+      "policy_reference": "FIN-REV-04",
+      "project_id": "ARM-2409",
+      "required_follow_up": "Commercial Records must obtain and review the executed resolution and referenced credit memo, confirm the operative amount and conditions, and update the PCO record before any recovery is recognized.",
+      "required_follow_up_tokens": [
+        [
+          "resolution",
+          "agreement",
+          "credit memo"
+        ],
+        [
+          "file",
+          "obtain",
+          "review",
+          "confirm"
+        ],
+        [
+          "condition",
+          "effective",
+          "amount",
+          "terms",
+          "commercial records"
+        ]
+      ]
+    },
+    {
+      "close_case_eac": 8532800.0,
+      "close_case_margin": 1954200.0,
+      "close_disposition": "Hold for controller review",
+      "commercial_reference": "PCO-017",
+      "controller_review_required": true,
+      "margin_impact": -275000.0,
+      "pending_revenue_included": false,
+      "pm_case_eac": 8257800.0,
+      "pm_case_margin": 2229200.0,
+      "policy_reference": "FIN-REV-04",
+      "project_id": "ARM-2417",
+      "required_follow_up": "Obtain the executed owner directive before recognizing the pending revenue.",
+      "required_follow_up_tokens": [
+        [
+          "owner directive",
+          "directive"
+        ],
+        [
+          "executed",
+          "signed"
+        ]
+      ]
+    },
+    {
+      "close_case_eac": 9224900.0,
+      "close_case_margin": 2355100.0,
+      "close_disposition": "Hold for controller review",
+      "commercial_reference": "PCO-006",
+      "controller_review_required": true,
+      "margin_impact": -210000.0,
+      "pending_revenue_included": false,
+      "pm_case_eac": 9014900.0,
+      "pm_case_margin": 2565100.0,
+      "policy_reference": "FIN-REV-04",
+      "project_id": "ARM-2506",
+      "required_follow_up": "Obtain executed pricing for DB-27 before recognizing the pending revenue.",
+      "required_follow_up_tokens": [
+        [
+          "db-27",
+          "db27",
+          "design bulletin"
+        ],
+        [
+          "pricing",
+          "price"
+        ],
+        [
+          "executed",
+          "approved"
+        ]
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "billings": 8702022.7,
+      "branch": "Portland",
+      "cost_to_date": 7192150.0,
+      "current_contract": 9392500,
+      "cutoff_cost_adjustment": 82750.0,
+      "earned_revenue": 9143264.78,
+      "estimated_cost_at_completion": 7388200.0,
+      "estimated_cost_to_complete": 196050.0,
+      "estimated_margin": 1951114.78,
+      "estimated_margin_percent": 0.213394,
+      "estimated_total_margin": 2004300.0,
+      "margin_movement_bps": -111.79,
+      "overbilling": 0.0,
+      "percent_complete": 0.9734644433014807,
+      "posted_cost_to_date": 7109400.0,
+      "prior_margin_percent": 0.22457279744476977,
+      "project_id": "ARM-2318",
+      "project_manager": "Maya Chen",
+      "project_name": "Columbia Biologics Clean Utilities",
+      "status": "Substantially Complete",
+      "underbilling": 441242.08
+    },
+    {
+      "billings": 4375593.13,
+      "branch": "Portland",
+      "cost_to_date": 3758696.69,
+      "current_contract": 5526000,
+      "cutoff_cost_adjustment": 27196.69,
+      "earned_revenue": 4677319.65,
+      "estimated_cost_at_completion": 4440696.69,
+      "estimated_cost_to_complete": 682000.0,
+      "estimated_margin": 918622.96,
+      "estimated_margin_percent": 0.196399,
+      "estimated_total_margin": 1085303.31,
+      "margin_movement_bps": -226.56,
+      "overbilling": 0.0,
+      "percent_complete": 0.8464204948886072,
+      "posted_cost_to_date": 3731500.0,
+      "prior_margin_percent": 0.21905537459283386,
+      "project_id": "ARM-2409",
+      "project_manager": "Priya Raman",
+      "project_name": "Northline Cold Storage Expansion",
+      "status": "Active",
+      "underbilling": 301726.52
+    },
+    {
+      "billings": 6114826.3,
+      "branch": "Portland",
+      "cost_to_date": 5228542.36,
+      "current_contract": 10487000,
+      "cutoff_cost_adjustment": 18742.36,
+      "earned_revenue": 6425994.25,
+      "estimated_cost_at_completion": 8532800.0,
+      "estimated_cost_to_complete": 3304257.64,
+      "estimated_margin": 1197451.89,
+      "estimated_margin_percent": 0.186345,
+      "estimated_total_margin": 1954200.0,
+      "margin_movement_bps": -262.23,
+      "overbilling": 0.0,
+      "percent_complete": 0.6127581051940747,
+      "posted_cost_to_date": 5209800.0,
+      "prior_margin_percent": 0.21256794126060838,
+      "project_id": "ARM-2417",
+      "project_manager": "Maya Chen",
+      "project_name": "Cascade Health Ambulatory Pavilion",
+      "status": "Active",
+      "underbilling": 311167.95
+    },
+    {
+      "billings": 5135581.06,
+      "branch": "Portland",
+      "cost_to_date": 4296860.0,
+      "current_contract": 11580000,
+      "cutoff_cost_adjustment": 12960.0,
+      "earned_revenue": 5393840.45,
+      "estimated_cost_at_completion": 9224900.0,
+      "estimated_cost_to_complete": 4928040.0,
+      "estimated_margin": 1096980.45,
+      "estimated_margin_percent": 0.203377,
+      "estimated_total_margin": 2355100.0,
+      "margin_movement_bps": -181.34,
+      "overbilling": 0.0,
+      "percent_complete": 0.4657893310496591,
+      "posted_cost_to_date": 4283900.0,
+      "prior_margin_percent": 0.22151122625215888,
+      "project_id": "ARM-2506",
+      "project_manager": "Priya Raman",
+      "project_name": "Eastbank Data Hall Cooling Expansion",
+      "status": "Active",
+      "underbilling": 258259.39
+    }
+  ],
+  "review_rows": [
+    {
+      "controller_review_required": false,
+      "cost_amount": 45000,
+      "cutoff_amount": 82750.0,
+      "cutoff_etc_transfer": 22750.0,
+      "cutoff_reference": "CRS-10942 / PO-2318-102",
+      "cutoff_unforecast_amount": 60000.0,
+      "netted_claim_or_backcharge": false,
+      "project_id": "ARM-2318",
+      "reference": "PCO-029",
+      "revenue_amount": 68000
+    },
+    {
+      "controller_review_required": true,
+      "cost_amount": 185000,
+      "cutoff_amount": 27196.69,
+      "cutoff_etc_transfer": 27196.69,
+      "cutoff_reference": "88417 / PO-2409-117",
+      "cutoff_unforecast_amount": 0.0,
+      "netted_claim_or_backcharge": true,
+      "project_id": "ARM-2409",
+      "reference": "PCO-011",
+      "revenue_amount": 185000
+    },
+    {
+      "controller_review_required": true,
+      "cost_amount": 275000,
+      "cutoff_amount": 18742.36,
+      "cutoff_etc_transfer": 18742.36,
+      "cutoff_reference": "NPV-63108 / PO-2417-084",
+      "cutoff_unforecast_amount": 0.0,
+      "netted_claim_or_backcharge": false,
+      "project_id": "ARM-2417",
+      "reference": "PCO-017",
+      "revenue_amount": 382000
+    },
+    {
+      "controller_review_required": true,
+      "cost_amount": 210000,
+      "cutoff_amount": 12960.0,
+      "cutoff_etc_transfer": 12960.0,
+      "cutoff_reference": "WER-240771 / EQ-2506-22",
+      "cutoff_unforecast_amount": 0.0,
+      "netted_claim_or_backcharge": false,
+      "project_id": "ARM-2506",
+      "reference": "PCO-006",
+      "revenue_amount": 296000
+    }
+  ],
+  "source_inputs": [
+    {
+      "billings": 8702022.7,
+      "cost_to_date": 7192150.0,
+      "current_contract": 9392500,
+      "documented_etc_overlay": 22250.0,
+      "pm_etc": 173800,
+      "prior_close_margin_percent": 0.22457279744476977,
+      "project_id": "ARM-2318"
+    },
+    {
+      "billings": 4375593.13,
+      "cost_to_date": 3758696.69,
+      "current_contract": 5526000,
+      "documented_etc_overlay": 98000.0,
+      "pm_etc": 584000,
+      "prior_close_margin_percent": 0.21905537459283386,
+      "project_id": "ARM-2409"
+    },
+    {
+      "billings": 6114826.3,
+      "cost_to_date": 5228542.36,
+      "current_contract": 10487000,
+      "documented_etc_overlay": 256257.64,
+      "pm_etc": 3048000,
+      "prior_close_margin_percent": 0.21256794126060838,
+      "project_id": "ARM-2417"
+    },
+    {
+      "billings": 5135581.06,
+      "cost_to_date": 4296860.0,
+      "current_contract": 11580000,
+      "documented_etc_overlay": 197040.0,
+      "pm_etc": 4731000,
+      "prior_close_margin_percent": 0.22151122625215888,
+      "project_id": "ARM-2506"
+    }
+  ],
+  "totals": {
+    "C11": 36985500,
+    "D11": 20476249.05,
+    "E11": 8536800,
+    "F11": 573547.64,
+    "G11": 9110347.64,
+    "H11": 29586596.69,
+    "I11": 0.6920785538311267,
+    "J11": 25640419.13,
+    "K11": 24328023.19,
+    "L11": 1312395.94,
+    "M11": 0.0,
+    "N11": 7398903.31,
+    "O11": 0.2000487572156656,
+    "P11": 0.21938597558502657,
+    "Q11": -193.37218369360977
+  }
+}

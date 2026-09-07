@@ -1,0 +1,708 @@
+{
+  "criteria": [
+    {
+      "category": "core_finance",
+      "description": "ARM-2318 current_contract input is correct",
+      "id": "input__arm-2318__current_contract",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "ARM-2318 cost_to_date input is correct",
+      "id": "input__arm-2318__cost_to_date",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "ARM-2318 pm_etc input is correct",
+      "id": "input__arm-2318__pm_etc",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "ARM-2318 finance_adjustment input is correct",
+      "id": "input__arm-2318__finance_adjustment",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "ARM-2318 billings input is correct",
+      "id": "input__arm-2318__billings",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "ARM-2318 prior_margin_percent input is correct",
+      "id": "input__arm-2318__prior_margin_percent",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "auditability",
+      "description": "ARM-2318 close calculations respond to source inputs",
+      "id": "formula_lineage__arm-2318",
+      "semantic": true,
+      "weight": 5
+    },
+    {
+      "category": "core_finance",
+      "description": "ARM-2318 close_etc result is correct",
+      "id": "result__arm-2318__close_etc",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "ARM-2318 eac result is correct",
+      "id": "result__arm-2318__eac",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "ARM-2318 percent_complete result is correct",
+      "id": "result__arm-2318__percent_complete",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "ARM-2318 earned_revenue result is correct",
+      "id": "result__arm-2318__earned_revenue",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "ARM-2318 contract_asset result is correct",
+      "id": "result__arm-2318__contract_asset",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "ARM-2318 contract_liability result is correct",
+      "id": "result__arm-2318__contract_liability",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "ARM-2318 margin result is correct",
+      "id": "result__arm-2318__margin",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "ARM-2318 margin_percent result is correct",
+      "id": "result__arm-2318__margin_percent",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "ARM-2318 margin_movement_bps result is correct",
+      "id": "result__arm-2318__margin_movement_bps",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "decision",
+      "description": "ARM-2318 review status is supportable",
+      "id": "review_status__arm-2318",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "decision",
+      "description": "ARM-2318 commercial treatment is supportable",
+      "id": "commercial_treatment__arm-2318",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "provenance",
+      "description": "ARM-2318 controlling support is identifiable",
+      "id": "source_support__arm-2318",
+      "semantic": true,
+      "weight": 3
+    },
+    {
+      "category": "decision",
+      "description": "ARM-2318 next action and owner are sufficient",
+      "id": "next_action__arm-2318",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "ARM-2409 current_contract input is correct",
+      "id": "input__arm-2409__current_contract",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "ARM-2409 cost_to_date input is correct",
+      "id": "input__arm-2409__cost_to_date",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "ARM-2409 pm_etc input is correct",
+      "id": "input__arm-2409__pm_etc",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "ARM-2409 finance_adjustment input is correct",
+      "id": "input__arm-2409__finance_adjustment",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "ARM-2409 billings input is correct",
+      "id": "input__arm-2409__billings",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "ARM-2409 prior_margin_percent input is correct",
+      "id": "input__arm-2409__prior_margin_percent",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "auditability",
+      "description": "ARM-2409 close calculations respond to source inputs",
+      "id": "formula_lineage__arm-2409",
+      "semantic": true,
+      "weight": 5
+    },
+    {
+      "category": "core_finance",
+      "description": "ARM-2409 close_etc result is correct",
+      "id": "result__arm-2409__close_etc",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "ARM-2409 eac result is correct",
+      "id": "result__arm-2409__eac",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "ARM-2409 percent_complete result is correct",
+      "id": "result__arm-2409__percent_complete",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "ARM-2409 earned_revenue result is correct",
+      "id": "result__arm-2409__earned_revenue",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "ARM-2409 contract_asset result is correct",
+      "id": "result__arm-2409__contract_asset",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "ARM-2409 contract_liability result is correct",
+      "id": "result__arm-2409__contract_liability",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "ARM-2409 margin result is correct",
+      "id": "result__arm-2409__margin",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "ARM-2409 margin_percent result is correct",
+      "id": "result__arm-2409__margin_percent",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "ARM-2409 margin_movement_bps result is correct",
+      "id": "result__arm-2409__margin_movement_bps",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "decision",
+      "description": "ARM-2409 review status is supportable",
+      "id": "review_status__arm-2409",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "decision",
+      "description": "ARM-2409 commercial treatment is supportable",
+      "id": "commercial_treatment__arm-2409",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "provenance",
+      "description": "ARM-2409 controlling support is identifiable",
+      "id": "source_support__arm-2409",
+      "semantic": true,
+      "weight": 3
+    },
+    {
+      "category": "decision",
+      "description": "ARM-2409 next action and owner are sufficient",
+      "id": "next_action__arm-2409",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "ARM-2417 current_contract input is correct",
+      "id": "input__arm-2417__current_contract",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "ARM-2417 cost_to_date input is correct",
+      "id": "input__arm-2417__cost_to_date",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "ARM-2417 pm_etc input is correct",
+      "id": "input__arm-2417__pm_etc",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "ARM-2417 finance_adjustment input is correct",
+      "id": "input__arm-2417__finance_adjustment",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "ARM-2417 billings input is correct",
+      "id": "input__arm-2417__billings",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "ARM-2417 prior_margin_percent input is correct",
+      "id": "input__arm-2417__prior_margin_percent",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "auditability",
+      "description": "ARM-2417 close calculations respond to source inputs",
+      "id": "formula_lineage__arm-2417",
+      "semantic": true,
+      "weight": 5
+    },
+    {
+      "category": "core_finance",
+      "description": "ARM-2417 close_etc result is correct",
+      "id": "result__arm-2417__close_etc",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "ARM-2417 eac result is correct",
+      "id": "result__arm-2417__eac",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "ARM-2417 percent_complete result is correct",
+      "id": "result__arm-2417__percent_complete",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "ARM-2417 earned_revenue result is correct",
+      "id": "result__arm-2417__earned_revenue",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "ARM-2417 contract_asset result is correct",
+      "id": "result__arm-2417__contract_asset",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "ARM-2417 contract_liability result is correct",
+      "id": "result__arm-2417__contract_liability",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "ARM-2417 margin result is correct",
+      "id": "result__arm-2417__margin",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "ARM-2417 margin_percent result is correct",
+      "id": "result__arm-2417__margin_percent",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "ARM-2417 margin_movement_bps result is correct",
+      "id": "result__arm-2417__margin_movement_bps",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "decision",
+      "description": "ARM-2417 review status is supportable",
+      "id": "review_status__arm-2417",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "decision",
+      "description": "ARM-2417 commercial treatment is supportable",
+      "id": "commercial_treatment__arm-2417",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "provenance",
+      "description": "ARM-2417 controlling support is identifiable",
+      "id": "source_support__arm-2417",
+      "semantic": true,
+      "weight": 3
+    },
+    {
+      "category": "decision",
+      "description": "ARM-2417 next action and owner are sufficient",
+      "id": "next_action__arm-2417",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "ARM-2506 current_contract input is correct",
+      "id": "input__arm-2506__current_contract",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "ARM-2506 cost_to_date input is correct",
+      "id": "input__arm-2506__cost_to_date",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "ARM-2506 pm_etc input is correct",
+      "id": "input__arm-2506__pm_etc",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "ARM-2506 finance_adjustment input is correct",
+      "id": "input__arm-2506__finance_adjustment",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "ARM-2506 billings input is correct",
+      "id": "input__arm-2506__billings",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "ARM-2506 prior_margin_percent input is correct",
+      "id": "input__arm-2506__prior_margin_percent",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "auditability",
+      "description": "ARM-2506 close calculations respond to source inputs",
+      "id": "formula_lineage__arm-2506",
+      "semantic": true,
+      "weight": 5
+    },
+    {
+      "category": "core_finance",
+      "description": "ARM-2506 close_etc result is correct",
+      "id": "result__arm-2506__close_etc",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "ARM-2506 eac result is correct",
+      "id": "result__arm-2506__eac",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "ARM-2506 percent_complete result is correct",
+      "id": "result__arm-2506__percent_complete",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "ARM-2506 earned_revenue result is correct",
+      "id": "result__arm-2506__earned_revenue",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "ARM-2506 contract_asset result is correct",
+      "id": "result__arm-2506__contract_asset",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "ARM-2506 contract_liability result is correct",
+      "id": "result__arm-2506__contract_liability",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "ARM-2506 margin result is correct",
+      "id": "result__arm-2506__margin",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "ARM-2506 margin_percent result is correct",
+      "id": "result__arm-2506__margin_percent",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "ARM-2506 margin_movement_bps result is correct",
+      "id": "result__arm-2506__margin_movement_bps",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "decision",
+      "description": "ARM-2506 review status is supportable",
+      "id": "review_status__arm-2506",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "decision",
+      "description": "ARM-2506 commercial treatment is supportable",
+      "id": "commercial_treatment__arm-2506",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "provenance",
+      "description": "ARM-2506 controlling support is identifiable",
+      "id": "source_support__arm-2506",
+      "semantic": true,
+      "weight": 3
+    },
+    {
+      "category": "decision",
+      "description": "ARM-2506 next action and owner are sufficient",
+      "id": "next_action__arm-2506",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "auditability",
+      "description": "Portfolio totals respond to the four project rows",
+      "id": "total_formula_lineage",
+      "semantic": true,
+      "weight": 5
+    },
+    {
+      "category": "core_finance",
+      "description": "Portfolio current_contract total is correct",
+      "id": "total_result__current_contract",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "Portfolio cost_to_date total is correct",
+      "id": "total_result__cost_to_date",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "Portfolio pm_etc total is correct",
+      "id": "total_result__pm_etc",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "Portfolio finance_adjustment total is correct",
+      "id": "total_result__finance_adjustment",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "Portfolio close_etc total is correct",
+      "id": "total_result__close_etc",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "Portfolio eac total is correct",
+      "id": "total_result__eac",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "Portfolio percent_complete total is correct",
+      "id": "total_result__percent_complete",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "Portfolio earned_revenue total is correct",
+      "id": "total_result__earned_revenue",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "Portfolio billings total is correct",
+      "id": "total_result__billings",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "Portfolio contract_asset total is correct",
+      "id": "total_result__contract_asset",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "Portfolio contract_liability total is correct",
+      "id": "total_result__contract_liability",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "Portfolio margin total is correct",
+      "id": "total_result__margin",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "Portfolio margin_percent total is correct",
+      "id": "total_result__margin_percent",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "Portfolio prior_margin_percent total is correct",
+      "id": "total_result__prior_margin_percent",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "Portfolio margin_movement_bps total is correct",
+      "id": "total_result__margin_movement_bps",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "decision",
+      "description": "The portfolio review queue is correct",
+      "id": "portfolio__review_queue",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "decision",
+      "description": "The portfolio release recommendation is supportable",
+      "id": "portfolio__release_decision",
+      "semantic": true,
+      "weight": 10
+    }
+  ],
+  "criterion_count": 98,
+  "deterministic_verifier": "environment/runtime/grading/apex.py",
+  "grading_contract": {
+    "basis": "an outcome-only business prompt and neutral two-sheet starter require unprompted discovery of four project judgments from ordinary PM, commercial, policy, prior-close, and accounting records; the shared PM register retains the real amounts, statuses, timing, and correspondence but no longer exposes an inclusion flag that announces forecast treatment; row, column, sheet, label, and ordinary unit variation are accepted; exact amounts and formula behavior remain deterministic while edited review status, accounting rationale, source use, ownership, and portfolio release wording receive independent scoped semantic review; a recognized primary recommendation cannot be rescued by a contradictory hypothetical support row, and a clearly scoped portfolio-wide AP action can satisfy the same cutoff action without four repetitions; an ordinary ARM-2318 invoice exceeds the amount carried for its PO in the PM commitment detail, so the close must transfer only the forecast overlap, recognize the residual EAC increase, and apply the existing Controller-review threshold without any prompt hint; portfolio-wide policy provenance is included in each scoped source-use review without requiring repeated filenames; an ordinary close-chat row records that the Controller already checked the ARM-2318 lift/retest estimate and retained the excluded PCO treatment; Finance must distinguish that completed exception review from the still-open AP, commercial, and ordinary close-sign-off work rather than placing every project on the same hold; this deepens the existing release judgment without changing the prompt, starter, requested deliverable, monetary answer, or criterion inventory; linear section normalization gives the cutoff-adjusted close and release judgment business-material priority while preserving proportional, uncapped criterion-level signal",
+    "effective_date": "2026-09-03",
+    "id": "task-004-close-status-release-judgment-v14"
+  },
+  "grading_revision": "weighted-atomic-hybrid-v18-close-status-release-judgment",
+  "integrity_verifier": "environment/runtime/grading/integrity.py",
+  "reference_contract": null,
+  "reward_policy": "environment/runtime/grading/rubric.py",
+  "reward_type": "weighted_partial_credit",
+  "semantic_criterion_count": 98,
+  "semantic_verifier": "environment/runtime/grading/production_semantic.py",
+  "slug": "complete-june-wip-risk-template",
+  "strict_pass": "all atomic criteria equal 1",
+  "task_id": "task_004",
+  "weight_total": 927
+}

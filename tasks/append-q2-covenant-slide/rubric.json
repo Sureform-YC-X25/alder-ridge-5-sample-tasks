@@ -1,0 +1,540 @@
+{
+  "criteria": [
+    {
+      "category": "integrity",
+      "description": "Exactly one slide appended",
+      "id": "preservation__slide_count",
+      "semantic": false,
+      "weight": 1
+    },
+    {
+      "category": "integrity",
+      "description": "Preserve slide 1",
+      "id": "preservation__slide_01",
+      "semantic": false,
+      "weight": 1
+    },
+    {
+      "category": "integrity",
+      "description": "Preserve slide 2",
+      "id": "preservation__slide_02",
+      "semantic": false,
+      "weight": 1
+    },
+    {
+      "category": "integrity",
+      "description": "Preserve slide 3",
+      "id": "preservation__slide_03",
+      "semantic": false,
+      "weight": 1
+    },
+    {
+      "category": "integrity",
+      "description": "Preserve slide 4",
+      "id": "preservation__slide_04",
+      "semantic": false,
+      "weight": 1
+    },
+    {
+      "category": "integrity",
+      "description": "Preserve slide 5",
+      "id": "preservation__slide_05",
+      "semantic": false,
+      "weight": 1
+    },
+    {
+      "category": "structure",
+      "description": "Required slide title",
+      "id": "structure__title",
+      "semantic": true,
+      "weight": 1
+    },
+    {
+      "category": "structure",
+      "description": "Required covenant comparison",
+      "id": "structure__table",
+      "semantic": true,
+      "weight": 1
+    },
+    {
+      "category": "presentation_quality",
+      "description": "Match the existing deck visual system",
+      "id": "style__visual_system",
+      "semantic": false,
+      "weight": 3
+    },
+    {
+      "category": "presentation_quality",
+      "description": "Use a clear title hierarchy consistent with the deck",
+      "id": "style__title_hierarchy",
+      "semantic": false,
+      "weight": 3
+    },
+    {
+      "category": "presentation_quality",
+      "description": "Present the covenant comparison in a reviewable table or equivalent executive layout",
+      "id": "style__table_readability",
+      "semantic": false,
+      "weight": 3
+    },
+    {
+      "category": "core_finance",
+      "description": "leverage posted",
+      "id": "metric__leverage__posted",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "leverage pro_forma",
+      "id": "metric__leverage__pro_forma",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "leverage threshold",
+      "id": "metric__leverage__threshold",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "leverage posted_headroom",
+      "id": "metric__leverage__posted_headroom",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "leverage pro_forma_headroom",
+      "id": "metric__leverage__pro_forma_headroom",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "decision",
+      "description": "leverage status",
+      "id": "metric__leverage__status",
+      "semantic": true,
+      "weight": 5
+    },
+    {
+      "category": "core_finance",
+      "description": "fccr posted",
+      "id": "metric__fccr__posted",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "fccr pro_forma",
+      "id": "metric__fccr__pro_forma",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "fccr threshold",
+      "id": "metric__fccr__threshold",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "fccr posted_headroom",
+      "id": "metric__fccr__posted_headroom",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "fccr pro_forma_headroom",
+      "id": "metric__fccr__pro_forma_headroom",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "decision",
+      "description": "fccr status",
+      "id": "metric__fccr__status",
+      "semantic": true,
+      "weight": 5
+    },
+    {
+      "category": "core_finance",
+      "description": "tangible_net_worth posted",
+      "id": "metric__tangible_net_worth__posted",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "tangible_net_worth pro_forma",
+      "id": "metric__tangible_net_worth__pro_forma",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "tangible_net_worth threshold",
+      "id": "metric__tangible_net_worth__threshold",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "tangible_net_worth posted_headroom",
+      "id": "metric__tangible_net_worth__posted_headroom",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "tangible_net_worth pro_forma_headroom",
+      "id": "metric__tangible_net_worth__pro_forma_headroom",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "decision",
+      "description": "tangible_net_worth status",
+      "id": "metric__tangible_net_worth__status",
+      "semantic": true,
+      "weight": 5
+    },
+    {
+      "category": "decision",
+      "description": "Proposed WIP status",
+      "id": "status__proposed",
+      "semantic": true,
+      "weight": 5
+    },
+    {
+      "category": "decision",
+      "description": "Unposted WIP status",
+      "id": "status__unposted",
+      "semantic": true,
+      "weight": 5
+    },
+    {
+      "category": "decision",
+      "description": "Compliance status",
+      "id": "status__compliant",
+      "semantic": true,
+      "weight": 5
+    },
+    {
+      "category": "decision",
+      "description": "Working-deck circulation boundary",
+      "id": "status__circulation",
+      "semantic": true,
+      "weight": 5
+    },
+    {
+      "category": "decision",
+      "description": "Binding covenant on like-for-like deterioration capacity",
+      "id": "headroom__binding_covenant",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "provenance",
+      "description": "Source note identifies the controlling calculation and accounting authorities",
+      "id": "source__authority",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "Calculation support funded debt",
+      "id": "calculation_support__funded_debt",
+      "semantic": true,
+      "weight": 5
+    },
+    {
+      "category": "core_finance",
+      "description": "Calculation support posted adjusted EBITDA",
+      "id": "calculation_support__posted_adjusted_ebitda",
+      "semantic": true,
+      "weight": 5
+    },
+    {
+      "category": "core_finance",
+      "description": "Calculation support pending June AP cutoff expense",
+      "id": "calculation_support__pending_ap_cutoff_expense",
+      "semantic": true,
+      "weight": 5
+    },
+    {
+      "category": "core_finance",
+      "description": "Calculation support proposed WIP adjustment",
+      "id": "calculation_support__proposed_wip_adjustment",
+      "semantic": true,
+      "weight": 5
+    },
+    {
+      "category": "core_finance",
+      "description": "Calculation support pro-forma adjusted EBITDA",
+      "id": "calculation_support__pro_forma_adjusted_ebitda",
+      "semantic": true,
+      "weight": 5
+    },
+    {
+      "category": "core_finance",
+      "description": "Calculation support cash taxes",
+      "id": "calculation_support__cash_taxes",
+      "semantic": true,
+      "weight": 5
+    },
+    {
+      "category": "core_finance",
+      "description": "Calculation support LTM fixed-asset additions",
+      "id": "calculation_support__ltm_fixed_asset_additions",
+      "semantic": true,
+      "weight": 5
+    },
+    {
+      "category": "core_finance",
+      "description": "Calculation support direct LTM equipment financing",
+      "id": "calculation_support__direct_equipment_financing",
+      "semantic": true,
+      "weight": 5
+    },
+    {
+      "category": "core_finance",
+      "description": "Calculation support unfunded capex",
+      "id": "calculation_support__unfunded_capex",
+      "semantic": true,
+      "weight": 5
+    },
+    {
+      "category": "core_finance",
+      "description": "Calculation support cash interest",
+      "id": "calculation_support__cash_interest",
+      "semantic": true,
+      "weight": 5
+    },
+    {
+      "category": "core_finance",
+      "description": "Calculation support scheduled principal",
+      "id": "calculation_support__scheduled_principal",
+      "semantic": true,
+      "weight": 5
+    },
+    {
+      "category": "core_finance",
+      "description": "Calculation support fixed charges",
+      "id": "calculation_support__fixed_charges",
+      "semantic": true,
+      "weight": 5
+    },
+    {
+      "category": "core_finance",
+      "description": "Calculation support posted FCCR numerator",
+      "id": "calculation_support__posted_fccr_numerator",
+      "semantic": true,
+      "weight": 5
+    },
+    {
+      "category": "core_finance",
+      "description": "Calculation support pro-forma FCCR numerator",
+      "id": "calculation_support__pro_forma_fccr_numerator",
+      "semantic": true,
+      "weight": 5
+    },
+    {
+      "category": "controls",
+      "description": "Calculation support equation posted EBITDA less pending AP expense plus proposed WIP equals pro-forma EBITDA",
+      "id": "calculation_support__equation__ebitda_bridge",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "controls",
+      "description": "Calculation support equation fixed-asset additions less direct financing equals unfunded capex",
+      "id": "calculation_support__equation__unfunded_capex",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "controls",
+      "description": "Calculation support equation cash interest plus scheduled principal equals fixed charges",
+      "id": "calculation_support__equation__fixed_charges",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "controls",
+      "description": "Calculation support equation posted EBITDA less taxes and unfunded capex equals the posted FCCR numerator",
+      "id": "calculation_support__equation__posted_fccr_numerator",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "controls",
+      "description": "Calculation support equation pro-forma EBITDA less taxes and unfunded capex equals the pro-forma FCCR numerator",
+      "id": "calculation_support__equation__pro_forma_fccr_numerator",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "controls",
+      "description": "Calculation support equation posted TNW less pending AP expense plus proposed WIP equals pro-forma TNW",
+      "id": "calculation_support__equation__tnw_bridge",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "structure",
+      "description": "Required proposed-WIP reversal sensitivity table",
+      "id": "structure__wip_reversal_sensitivity",
+      "semantic": true,
+      "weight": 1
+    },
+    {
+      "category": "core_finance",
+      "description": "25% WIP-reversal sensitivity retained wip adjustment",
+      "id": "sensitivity__reversal_25__retained_wip_adjustment",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "25% WIP-reversal sensitivity adjusted ebitda",
+      "id": "sensitivity__reversal_25__adjusted_ebitda",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "25% WIP-reversal sensitivity tangible net worth",
+      "id": "sensitivity__reversal_25__tangible_net_worth",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "25% WIP-reversal sensitivity leverage",
+      "id": "sensitivity__reversal_25__leverage",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "25% WIP-reversal sensitivity fccr",
+      "id": "sensitivity__reversal_25__fccr",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "decision",
+      "description": "25% WIP-reversal sensitivity status",
+      "id": "sensitivity__reversal_25__status",
+      "semantic": true,
+      "weight": 5
+    },
+    {
+      "category": "core_finance",
+      "description": "50% WIP-reversal sensitivity retained wip adjustment",
+      "id": "sensitivity__reversal_50__retained_wip_adjustment",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "50% WIP-reversal sensitivity adjusted ebitda",
+      "id": "sensitivity__reversal_50__adjusted_ebitda",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "50% WIP-reversal sensitivity tangible net worth",
+      "id": "sensitivity__reversal_50__tangible_net_worth",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "50% WIP-reversal sensitivity leverage",
+      "id": "sensitivity__reversal_50__leverage",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "50% WIP-reversal sensitivity fccr",
+      "id": "sensitivity__reversal_50__fccr",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "decision",
+      "description": "50% WIP-reversal sensitivity status",
+      "id": "sensitivity__reversal_50__status",
+      "semantic": true,
+      "weight": 5
+    },
+    {
+      "category": "core_finance",
+      "description": "100% WIP-reversal sensitivity retained wip adjustment",
+      "id": "sensitivity__reversal_100__retained_wip_adjustment",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "100% WIP-reversal sensitivity adjusted ebitda",
+      "id": "sensitivity__reversal_100__adjusted_ebitda",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "100% WIP-reversal sensitivity tangible net worth",
+      "id": "sensitivity__reversal_100__tangible_net_worth",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "100% WIP-reversal sensitivity leverage",
+      "id": "sensitivity__reversal_100__leverage",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "100% WIP-reversal sensitivity fccr",
+      "id": "sensitivity__reversal_100__fccr",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "decision",
+      "description": "100% WIP-reversal sensitivity status",
+      "id": "sensitivity__reversal_100__status",
+      "semantic": true,
+      "weight": 5
+    }
+  ],
+  "criterion_count": 74,
+  "deterministic_verifier": "environment/runtime/grading/apex.py",
+  "grading_contract": {
+    "basis": "a concise objective-led lender request requires independent discovery and reperformance from the executed agreement, posted accounting records, ordinary June AP cutoff evidence, and the current proposed-WIP support; the July 2 close-pro-forma basis follows the source-supported posting sequence and does not import an older WIP snapshot. Exact values are unit-scoped deterministic hard gates, aligned text-box matrices retain their visible row and column associations for criterion-scoped semantic review, and a binding-covenant conclusion requires its four like-for-like capacity prerequisites. The untouched five-slide starter receives zero credit, correct alternate layouts and normal units remain gradeable, central finance work dominates presentation mechanics, and all reward is proportional without task-level or section-level score caps",
+    "effective_date": "2026-09-04",
+    "id": "task-015-current-close-covenant-v14"
+  },
+  "grading_revision": "weighted-atomic-hybrid-v19-aligned-matrix-unit-scoping",
+  "integrity_verifier": "environment/runtime/grading/integrity.py",
+  "reference_contract": null,
+  "reward_policy": "environment/runtime/grading/rubric.py",
+  "reward_type": "weighted_partial_credit",
+  "semantic_criterion_count": 65,
+  "semantic_verifier": "environment/runtime/grading/production_semantic.py",
+  "slug": "append-q2-covenant-slide",
+  "strict_pass": "all atomic criteria equal 1",
+  "task_id": "task_015",
+  "weight_total": 518
+}

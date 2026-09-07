@@ -1,0 +1,932 @@
+{
+  "criteria": [
+    {
+      "category": "structure",
+      "description": "Required worksheet 'Contract Backlog' is present",
+      "id": "structure__sheet_contract_backlog",
+      "semantic": false,
+      "weight": 1
+    },
+    {
+      "category": "structure",
+      "description": "Required worksheet 'Capacity Inputs' is present",
+      "id": "structure__sheet_capacity_inputs",
+      "semantic": false,
+      "weight": 1
+    },
+    {
+      "category": "structure",
+      "description": "Required worksheet 'Execution Authority' is present",
+      "id": "structure__sheet_execution_authority",
+      "semantic": false,
+      "weight": 1
+    },
+    {
+      "category": "structure",
+      "description": "Required worksheet 'Revenue Burn' is present",
+      "id": "structure__sheet_revenue_burn",
+      "semantic": false,
+      "weight": 1
+    },
+    {
+      "category": "structure",
+      "description": "Required worksheet 'Labor Capacity' is present",
+      "id": "structure__sheet_labor_capacity",
+      "semantic": false,
+      "weight": 1
+    },
+    {
+      "category": "structure",
+      "description": "Required worksheet 'Gap Analysis' is present",
+      "id": "structure__sheet_gap_analysis",
+      "semantic": false,
+      "weight": 1
+    },
+    {
+      "category": "structure",
+      "description": "Required worksheet 'Project Execution' is present",
+      "id": "structure__sheet_project_execution",
+      "semantic": false,
+      "weight": 1
+    },
+    {
+      "category": "structure",
+      "description": "Required worksheet 'Checks' is present",
+      "id": "structure__sheet_checks",
+      "semantic": false,
+      "weight": 1
+    },
+    {
+      "category": "integrity",
+      "description": "Protected source worksheet 'Contract Backlog' remains unchanged",
+      "id": "structure__preserve_contract_backlog",
+      "semantic": false,
+      "weight": 10
+    },
+    {
+      "category": "integrity",
+      "description": "Protected source worksheet 'Capacity Inputs' remains unchanged",
+      "id": "structure__preserve_capacity_inputs",
+      "semantic": false,
+      "weight": 10
+    },
+    {
+      "category": "integrity",
+      "description": "Protected source worksheet 'Execution Authority' remains unchanged",
+      "id": "structure__preserve_execution_authority",
+      "semantic": false,
+      "weight": 10
+    },
+    {
+      "category": "integrity",
+      "description": "The submitted workbook contains no spreadsheet error values",
+      "id": "model_integrity__no_errors",
+      "semantic": false,
+      "weight": 10
+    },
+    {
+      "category": "auditability",
+      "description": "Headline output 'signed_backlog' is formula-driven from workbook references",
+      "id": "formula_lineage__headline_signed_backlog",
+      "semantic": true,
+      "weight": 5
+    },
+    {
+      "category": "auditability",
+      "description": "Headline output 'fy27_backlog_revenue_burn' is formula-driven from workbook references",
+      "id": "formula_lineage__headline_fy27_backlog_revenue_burn",
+      "semantic": true,
+      "weight": 5
+    },
+    {
+      "category": "auditability",
+      "description": "Headline output 'fy27_required_hours' is formula-driven from workbook references",
+      "id": "formula_lineage__headline_fy27_required_hours",
+      "semantic": true,
+      "weight": 5
+    },
+    {
+      "category": "auditability",
+      "description": "Headline output 'fy27_available_hours' is formula-driven from workbook references",
+      "id": "formula_lineage__headline_fy27_available_hours",
+      "semantic": true,
+      "weight": 5
+    },
+    {
+      "category": "auditability",
+      "description": "Headline output 'constrained_month_count' is formula-driven from workbook references",
+      "id": "formula_lineage__headline_constrained_month_count",
+      "semantic": true,
+      "weight": 5
+    },
+    {
+      "category": "auditability",
+      "description": "Headline output 'first_constrained_month' is formula-driven from workbook references",
+      "id": "formula_lineage__headline_first_constrained_month",
+      "semantic": true,
+      "weight": 5
+    },
+    {
+      "category": "auditability",
+      "description": "Headline output 'maximum_capacity_shortfall_hours' is formula-driven from workbook references",
+      "id": "formula_lineage__headline_maximum_capacity_shortfall_hours",
+      "semantic": true,
+      "weight": 5
+    },
+    {
+      "category": "auditability",
+      "description": "Headline output 'probability_plan_unresolved_hours' is formula-driven from workbook references",
+      "id": "formula_lineage__headline_probability_plan_unresolved_hours",
+      "semantic": true,
+      "weight": 5
+    },
+    {
+      "category": "auditability",
+      "description": "Headline output 'probability_plan_remediation_cost' is formula-driven from workbook references",
+      "id": "formula_lineage__headline_probability_plan_remediation_cost",
+      "semantic": true,
+      "weight": 5
+    },
+    {
+      "category": "auditability",
+      "description": "Headline output 'gross_commitment_revenue_burn' is formula-driven from workbook references",
+      "id": "formula_lineage__headline_gross_commitment_revenue_burn",
+      "semantic": true,
+      "weight": 5
+    },
+    {
+      "category": "auditability",
+      "description": "Headline output 'gross_commitment_required_hours' is formula-driven from workbook references",
+      "id": "formula_lineage__headline_gross_commitment_required_hours",
+      "semantic": true,
+      "weight": 5
+    },
+    {
+      "category": "auditability",
+      "description": "Headline output 'gross_commitment_first_constrained_month' is formula-driven from workbook references",
+      "id": "formula_lineage__headline_gross_commitment_first_constrained_month",
+      "semantic": true,
+      "weight": 5
+    },
+    {
+      "category": "auditability",
+      "description": "Headline output 'gross_commitment_maximum_capacity_shortfall_hours' is formula-driven from workbook references",
+      "id": "formula_lineage__headline_gross_commitment_maximum_capacity_shortfall_hours",
+      "semantic": true,
+      "weight": 5
+    },
+    {
+      "category": "auditability",
+      "description": "Headline output 'gross_commitment_unresolved_hours' is formula-driven from workbook references",
+      "id": "formula_lineage__headline_gross_commitment_unresolved_hours",
+      "semantic": true,
+      "weight": 5
+    },
+    {
+      "category": "auditability",
+      "description": "Headline output 'gross_commitment_remediation_cost' is formula-driven from workbook references",
+      "id": "formula_lineage__headline_gross_commitment_remediation_cost",
+      "semantic": true,
+      "weight": 5
+    },
+    {
+      "category": "auditability",
+      "description": "Headline output 'gross_commitment_revenue_variance_to_probability_plan' is formula-driven from workbook references",
+      "id": "formula_lineage__headline_gross_commitment_revenue_variance_to_probability_plan",
+      "semantic": true,
+      "weight": 5
+    },
+    {
+      "category": "auditability",
+      "description": "Headline output 'gross_commitment_required_hours_variance_to_probability_plan' is formula-driven from workbook references",
+      "id": "formula_lineage__headline_gross_commitment_required_hours_variance_to_probability_plan",
+      "semantic": true,
+      "weight": 5
+    },
+    {
+      "category": "auditability",
+      "description": "Headline output 'gross_commitment_unresolved_hours_variance_to_probability_plan' is formula-driven from workbook references",
+      "id": "formula_lineage__headline_gross_commitment_unresolved_hours_variance_to_probability_plan",
+      "semantic": true,
+      "weight": 5
+    },
+    {
+      "category": "auditability",
+      "description": "Headline output 'gross_commitment_remediation_cost_variance_to_probability_plan' is formula-driven from workbook references",
+      "id": "formula_lineage__headline_gross_commitment_remediation_cost_variance_to_probability_plan",
+      "semantic": true,
+      "weight": 5
+    },
+    {
+      "category": "auditability",
+      "description": "Headline output 'gross_commitment_release_status' is formula-driven from workbook references",
+      "id": "formula_lineage__headline_gross_commitment_release_status",
+      "semantic": true,
+      "weight": 5
+    },
+    {
+      "category": "auditability",
+      "description": "Headline output 'controlling_capacity_case' is formula-driven from workbook references",
+      "id": "formula_lineage__headline_controlling_capacity_case",
+      "semantic": true,
+      "weight": 5
+    },
+    {
+      "category": "auditability",
+      "description": "Headline output 'execution_portfolio_completed_revenue' is formula-driven from workbook references",
+      "id": "formula_lineage__headline_execution_portfolio_completed_revenue",
+      "semantic": true,
+      "weight": 5
+    },
+    {
+      "category": "auditability",
+      "description": "Headline output 'execution_portfolio_ending_deferred_revenue' is formula-driven from workbook references",
+      "id": "formula_lineage__headline_execution_portfolio_ending_deferred_revenue",
+      "semantic": true,
+      "weight": 5
+    },
+    {
+      "category": "auditability",
+      "description": "Headline output 'execution_portfolio_revenue_check_delta' is formula-driven from workbook references",
+      "id": "formula_lineage__headline_execution_portfolio_revenue_check_delta",
+      "semantic": true,
+      "weight": 5
+    },
+    {
+      "category": "auditability",
+      "description": "Headline output 'execution_portfolio_ending_deferred_hours' is formula-driven from workbook references",
+      "id": "formula_lineage__headline_execution_portfolio_ending_deferred_hours",
+      "semantic": true,
+      "weight": 5
+    },
+    {
+      "category": "auditability",
+      "description": "Headline output 'execution_portfolio_completed_gross_profit' is formula-driven from workbook references",
+      "id": "formula_lineage__headline_execution_portfolio_completed_gross_profit",
+      "semantic": true,
+      "weight": 5
+    },
+    {
+      "category": "auditability",
+      "description": "Headline output 'execution_portfolio_liquidated_damages' is formula-driven from workbook references",
+      "id": "formula_lineage__headline_execution_portfolio_liquidated_damages",
+      "semantic": true,
+      "weight": 5
+    },
+    {
+      "category": "auditability",
+      "description": "Headline output 'execution_portfolio_net_gross_profit_after_damages' is formula-driven from workbook references",
+      "id": "formula_lineage__headline_execution_portfolio_net_gross_profit_after_damages",
+      "semantic": true,
+      "weight": 5
+    },
+    {
+      "category": "auditability",
+      "description": "Headline output 'execution_portfolio_highest_priority_deferred_project' is formula-driven from workbook references",
+      "id": "formula_lineage__headline_execution_portfolio_highest_priority_deferred_project",
+      "semantic": true,
+      "weight": 5
+    },
+    {
+      "category": "auditability",
+      "description": "Headline output 'execution_portfolio_release_status' is formula-driven from workbook references",
+      "id": "formula_lineage__headline_execution_portfolio_release_status",
+      "semantic": true,
+      "weight": 5
+    },
+    {
+      "category": "auditability",
+      "description": "Headline output 'release_bridge_probability_plan_gross_profit_after_remediation' is formula-driven from workbook references",
+      "id": "formula_lineage__headline_release_bridge_probability_plan_gross_profit_after_remediation",
+      "semantic": true,
+      "weight": 5
+    },
+    {
+      "category": "auditability",
+      "description": "Headline output 'release_bridge_gross_commitment_gross_profit_after_remediation' is formula-driven from workbook references",
+      "id": "formula_lineage__headline_release_bridge_gross_commitment_gross_profit_after_remediation",
+      "semantic": true,
+      "weight": 5
+    },
+    {
+      "category": "auditability",
+      "description": "Headline output 'release_bridge_execution_net_gross_profit_after_damages' is formula-driven from workbook references",
+      "id": "formula_lineage__headline_release_bridge_execution_net_gross_profit_after_damages",
+      "semantic": true,
+      "weight": 5
+    },
+    {
+      "category": "auditability",
+      "description": "Headline output 'release_bridge_deferred_revenue_at_risk' is formula-driven from workbook references",
+      "id": "formula_lineage__headline_release_bridge_deferred_revenue_at_risk",
+      "semantic": true,
+      "weight": 5
+    },
+    {
+      "category": "auditability",
+      "description": "Headline output 'release_bridge_management_decision' is formula-driven from workbook references",
+      "id": "formula_lineage__headline_release_bridge_management_decision",
+      "semantic": true,
+      "weight": 5
+    },
+    {
+      "category": "auditability",
+      "description": "Headline output 'executive_recovery_probability_plan_gp_after_remediation' is formula-driven from workbook references",
+      "id": "formula_lineage__headline_executive_recovery_probability_plan_gp_after_remediation",
+      "semantic": true,
+      "weight": 5
+    },
+    {
+      "category": "auditability",
+      "description": "Headline output 'executive_recovery_gross_commitment_gp_after_remediation' is formula-driven from workbook references",
+      "id": "formula_lineage__headline_executive_recovery_gross_commitment_gp_after_remediation",
+      "semantic": true,
+      "weight": 5
+    },
+    {
+      "category": "auditability",
+      "description": "Headline output 'executive_recovery_execution_net_gp_after_damages' is formula-driven from workbook references",
+      "id": "formula_lineage__headline_executive_recovery_execution_net_gp_after_damages",
+      "semantic": true,
+      "weight": 5
+    },
+    {
+      "category": "auditability",
+      "description": "Headline output 'executive_recovery_gross_commitment_shortfall' is formula-driven from workbook references",
+      "id": "formula_lineage__headline_executive_recovery_gross_commitment_shortfall",
+      "semantic": true,
+      "weight": 5
+    },
+    {
+      "category": "auditability",
+      "description": "Headline output 'executive_recovery_deferred_revenue_at_risk' is formula-driven from workbook references",
+      "id": "formula_lineage__headline_executive_recovery_deferred_revenue_at_risk",
+      "semantic": true,
+      "weight": 5
+    },
+    {
+      "category": "auditability",
+      "description": "Headline output 'executive_recovery_deferred_gross_profit_at_risk' is formula-driven from workbook references",
+      "id": "formula_lineage__headline_executive_recovery_deferred_gross_profit_at_risk",
+      "semantic": true,
+      "weight": 5
+    },
+    {
+      "category": "auditability",
+      "description": "Headline output 'executive_recovery_liquidated_damages' is formula-driven from workbook references",
+      "id": "formula_lineage__headline_executive_recovery_liquidated_damages",
+      "semantic": true,
+      "weight": 5
+    },
+    {
+      "category": "auditability",
+      "description": "Headline output 'executive_recovery_required_recovery' is formula-driven from workbook references",
+      "id": "formula_lineage__headline_executive_recovery_required_recovery",
+      "semantic": true,
+      "weight": 5
+    },
+    {
+      "category": "auditability",
+      "description": "Headline output 'executive_recovery_highest_priority_deferred_project' is formula-driven from workbook references",
+      "id": "formula_lineage__headline_executive_recovery_highest_priority_deferred_project",
+      "semantic": true,
+      "weight": 5
+    },
+    {
+      "category": "auditability",
+      "description": "Headline output 'executive_recovery_decision' is formula-driven from workbook references",
+      "id": "formula_lineage__headline_executive_recovery_decision",
+      "semantic": true,
+      "weight": 5
+    },
+    {
+      "category": "auditability",
+      "description": "Required model worksheet 'Revenue Burn' contains formulas",
+      "id": "formula_lineage__formula_sheet_revenue_burn",
+      "semantic": false,
+      "weight": 3
+    },
+    {
+      "category": "auditability",
+      "description": "Required model worksheet 'Labor Capacity' contains formulas",
+      "id": "formula_lineage__formula_sheet_labor_capacity",
+      "semantic": false,
+      "weight": 3
+    },
+    {
+      "category": "auditability",
+      "description": "Required model worksheet 'Gap Analysis' contains formulas",
+      "id": "formula_lineage__formula_sheet_gap_analysis",
+      "semantic": false,
+      "weight": 3
+    },
+    {
+      "category": "auditability",
+      "description": "Required model worksheet 'Project Execution' contains formulas",
+      "id": "formula_lineage__formula_sheet_project_execution",
+      "semantic": false,
+      "weight": 3
+    },
+    {
+      "category": "auditability",
+      "description": "Required model worksheet 'Checks' contains formulas",
+      "id": "formula_lineage__formula_sheet_checks",
+      "semantic": false,
+      "weight": 3
+    },
+    {
+      "category": "auditability",
+      "description": "Material calculations on worksheet 'Revenue Burn' are linked to supporting schedule 'Contract Backlog'",
+      "id": "formula_lineage__link_revenue_burn_from_contract_backlog",
+      "semantic": false,
+      "weight": 3
+    },
+    {
+      "category": "auditability",
+      "description": "Material calculations on worksheet 'Labor Capacity' are linked to supporting schedule 'Capacity Inputs'",
+      "id": "formula_lineage__link_labor_capacity_from_capacity_inputs",
+      "semantic": false,
+      "weight": 3
+    },
+    {
+      "category": "auditability",
+      "description": "Material calculations on worksheet 'Gap Analysis' are linked to supporting schedule 'Revenue Burn'",
+      "id": "formula_lineage__link_gap_analysis_from_revenue_burn",
+      "semantic": false,
+      "weight": 3
+    },
+    {
+      "category": "auditability",
+      "description": "Material calculations on worksheet 'Gap Analysis' are linked to supporting schedule 'Labor Capacity'",
+      "id": "formula_lineage__link_gap_analysis_from_labor_capacity",
+      "semantic": false,
+      "weight": 3
+    },
+    {
+      "category": "auditability",
+      "description": "Material calculations on worksheet 'Project Execution' are linked to supporting schedule 'Gap Analysis'",
+      "id": "formula_lineage__link_project_execution_from_gap_analysis",
+      "semantic": false,
+      "weight": 3
+    },
+    {
+      "category": "auditability",
+      "description": "Material calculations on worksheet 'Project Execution' are linked to supporting schedule 'Execution Authority'",
+      "id": "formula_lineage__link_project_execution_from_execution_authority",
+      "semantic": false,
+      "weight": 3
+    },
+    {
+      "category": "auditability",
+      "description": "Material calculations on worksheet 'Checks' are linked to supporting schedule 'Project Execution'",
+      "id": "formula_lineage__link_checks_from_project_execution",
+      "semantic": false,
+      "weight": 3
+    },
+    {
+      "category": "core_finance",
+      "description": "Every required headline output is labeled and correct: `signed_backlog` is correctly labeled and associated",
+      "id": "headline_values__signed_backlog",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "Every required headline output is labeled and correct: `fy27_backlog_revenue_burn` is correctly labeled and associated",
+      "id": "headline_values__fy27_backlog_revenue_burn",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "decision",
+      "description": "Every required headline output is labeled and correct: `fy27_required_hours` is correctly labeled and associated",
+      "id": "headline_values__fy27_required_hours",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "Every required headline output is labeled and correct: `fy27_available_hours` is correctly labeled and associated",
+      "id": "headline_values__fy27_available_hours",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "Every required headline output is labeled and correct: `constrained_month_count` is correctly labeled and associated",
+      "id": "headline_values__constrained_month_count",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "Every required headline output is labeled and correct: `first_constrained_month` is correctly labeled and associated",
+      "id": "headline_values__first_constrained_month",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "Every required headline output is labeled and correct: `maximum_capacity_shortfall_hours` is correctly labeled and associated",
+      "id": "headline_values__maximum_capacity_shortfall_hours",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "Every required headline output is labeled and correct: `probability_plan_unresolved_hours` is correctly labeled and associated",
+      "id": "headline_values__probability_plan_unresolved_hours",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "Every required headline output is labeled and correct: `probability_plan_remediation_cost` is correctly labeled and associated",
+      "id": "headline_values__probability_plan_remediation_cost",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "Every required headline output is labeled and correct: `gross_commitment_revenue_burn` is correctly labeled and associated",
+      "id": "headline_values__gross_commitment_revenue_burn",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "decision",
+      "description": "Every required headline output is labeled and correct: `gross_commitment_required_hours` is correctly labeled and associated",
+      "id": "headline_values__gross_commitment_required_hours",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "Every required headline output is labeled and correct: `gross_commitment_first_constrained_month` is correctly labeled and associated",
+      "id": "headline_values__gross_commitment_first_constrained_month",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "Every required headline output is labeled and correct: `gross_commitment_maximum_capacity_shortfall_hours` is correctly labeled and associated",
+      "id": "headline_values__gross_commitment_maximum_capacity_shortfall_hours",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "Every required headline output is labeled and correct: `gross_commitment_unresolved_hours` is correctly labeled and associated",
+      "id": "headline_values__gross_commitment_unresolved_hours",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "Every required headline output is labeled and correct: `gross_commitment_remediation_cost` is correctly labeled and associated",
+      "id": "headline_values__gross_commitment_remediation_cost",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "Every required headline output is labeled and correct: `gross_commitment_revenue_variance_to_probability_plan` is correctly labeled and associated",
+      "id": "headline_values__gross_commitment_revenue_variance_to_probability_plan",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "decision",
+      "description": "Every required headline output is labeled and correct: `gross_commitment_required_hours_variance_to_probability_plan` is correctly labeled and associated",
+      "id": "headline_values__gross_commitment_required_hours_variance_to_probability_plan",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "Every required headline output is labeled and correct: `gross_commitment_unresolved_hours_variance_to_probability_plan` is correctly labeled and associated",
+      "id": "headline_values__gross_commitment_unresolved_hours_variance_to_probability_plan",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "Every required headline output is labeled and correct: `gross_commitment_remediation_cost_variance_to_probability_plan` is correctly labeled and associated",
+      "id": "headline_values__gross_commitment_remediation_cost_variance_to_probability_plan",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "decision",
+      "description": "Every required headline output is labeled and correct: `gross_commitment_release_status` is correctly labeled and associated",
+      "id": "headline_values__gross_commitment_release_status",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "Every required headline output is labeled and correct: `controlling_capacity_case` is correctly labeled and associated",
+      "id": "headline_values__controlling_capacity_case",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "Every required headline output is labeled and correct: `execution_portfolio_completed_revenue` is correctly labeled and associated",
+      "id": "headline_values__execution_portfolio_completed_revenue",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "Every required headline output is labeled and correct: `execution_portfolio_ending_deferred_revenue` is correctly labeled and associated",
+      "id": "headline_values__execution_portfolio_ending_deferred_revenue",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "Every required headline output is labeled and correct: `execution_portfolio_revenue_check_delta` is correctly labeled and associated",
+      "id": "headline_values__execution_portfolio_revenue_check_delta",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "Every required headline output is labeled and correct: `execution_portfolio_ending_deferred_hours` is correctly labeled and associated",
+      "id": "headline_values__execution_portfolio_ending_deferred_hours",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "Every required headline output is labeled and correct: `execution_portfolio_completed_gross_profit` is correctly labeled and associated",
+      "id": "headline_values__execution_portfolio_completed_gross_profit",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "Every required headline output is labeled and correct: `execution_portfolio_liquidated_damages` is correctly labeled and associated",
+      "id": "headline_values__execution_portfolio_liquidated_damages",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "Every required headline output is labeled and correct: `execution_portfolio_net_gross_profit_after_damages` is correctly labeled and associated",
+      "id": "headline_values__execution_portfolio_net_gross_profit_after_damages",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "Every required headline output is labeled and correct: `execution_portfolio_highest_priority_deferred_project` is correctly labeled and associated",
+      "id": "headline_values__execution_portfolio_highest_priority_deferred_project",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "decision",
+      "description": "Every required headline output is labeled and correct: `execution_portfolio_release_status` is correctly labeled and associated",
+      "id": "headline_values__execution_portfolio_release_status",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "Every required headline output is labeled and correct: `release_bridge_probability_plan_gross_profit_after_remediation` is correctly labeled and associated",
+      "id": "headline_values__release_bridge_probability_plan_gross_profit_after_remediation",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "Every required headline output is labeled and correct: `release_bridge_gross_commitment_gross_profit_after_remediation` is correctly labeled and associated",
+      "id": "headline_values__release_bridge_gross_commitment_gross_profit_after_remediation",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "Every required headline output is labeled and correct: `release_bridge_execution_net_gross_profit_after_damages` is correctly labeled and associated",
+      "id": "headline_values__release_bridge_execution_net_gross_profit_after_damages",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "Every required headline output is labeled and correct: `release_bridge_deferred_revenue_at_risk` is correctly labeled and associated",
+      "id": "headline_values__release_bridge_deferred_revenue_at_risk",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "decision",
+      "description": "Every required headline output is labeled and correct: `release_bridge_management_decision` is correctly labeled and associated",
+      "id": "headline_values__release_bridge_management_decision",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "Every required headline output is labeled and correct: `executive_recovery_probability_plan_gp_after_remediation` is correctly labeled and associated",
+      "id": "headline_values__executive_recovery_probability_plan_gp_after_remediation",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "Every required headline output is labeled and correct: `executive_recovery_gross_commitment_gp_after_remediation` is correctly labeled and associated",
+      "id": "headline_values__executive_recovery_gross_commitment_gp_after_remediation",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "Every required headline output is labeled and correct: `executive_recovery_execution_net_gp_after_damages` is correctly labeled and associated",
+      "id": "headline_values__executive_recovery_execution_net_gp_after_damages",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "Every required headline output is labeled and correct: `executive_recovery_gross_commitment_shortfall` is correctly labeled and associated",
+      "id": "headline_values__executive_recovery_gross_commitment_shortfall",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "Every required headline output is labeled and correct: `executive_recovery_deferred_revenue_at_risk` is correctly labeled and associated",
+      "id": "headline_values__executive_recovery_deferred_revenue_at_risk",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "Every required headline output is labeled and correct: `executive_recovery_deferred_gross_profit_at_risk` is correctly labeled and associated",
+      "id": "headline_values__executive_recovery_deferred_gross_profit_at_risk",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "Every required headline output is labeled and correct: `executive_recovery_liquidated_damages` is correctly labeled and associated",
+      "id": "headline_values__executive_recovery_liquidated_damages",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "decision",
+      "description": "Every required headline output is labeled and correct: `executive_recovery_required_recovery` is correctly labeled and associated",
+      "id": "headline_values__executive_recovery_required_recovery",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "core_finance",
+      "description": "Every required headline output is labeled and correct: `executive_recovery_highest_priority_deferred_project` is correctly labeled and associated",
+      "id": "headline_values__executive_recovery_highest_priority_deferred_project",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "decision",
+      "description": "Every required headline output is labeled and correct: `executive_recovery_decision` is correctly labeled and associated",
+      "id": "headline_values__executive_recovery_decision",
+      "semantic": true,
+      "weight": 10
+    },
+    {
+      "category": "auditability",
+      "description": "The workbook includes the analysis schedules and decision controls needed for the assignment: the artifact substantively addresses 'burn curve'",
+      "id": "model_content__burn_curve",
+      "semantic": true,
+      "weight": 3
+    },
+    {
+      "category": "auditability",
+      "description": "The workbook includes the analysis schedules and decision controls needed for the assignment: the artifact substantively addresses 'required hours'",
+      "id": "model_content__required_hours",
+      "semantic": true,
+      "weight": 3
+    },
+    {
+      "category": "auditability",
+      "description": "The workbook includes the analysis schedules and decision controls needed for the assignment: the artifact substantively addresses 'available hours'",
+      "id": "model_content__available_hours",
+      "semantic": true,
+      "weight": 3
+    },
+    {
+      "category": "auditability",
+      "description": "The workbook includes the analysis schedules and decision controls needed for the assignment: the artifact substantively addresses 'overtime'",
+      "id": "model_content__overtime",
+      "semantic": true,
+      "weight": 3
+    },
+    {
+      "category": "auditability",
+      "description": "The workbook includes the analysis schedules and decision controls needed for the assignment: the artifact substantively addresses 'subcontract'",
+      "id": "model_content__subcontract",
+      "semantic": true,
+      "weight": 3
+    },
+    {
+      "category": "auditability",
+      "description": "The workbook includes the analysis schedules and decision controls needed for the assignment: the artifact substantively addresses 'capacity gap'",
+      "id": "model_content__capacity_gap",
+      "semantic": true,
+      "weight": 3
+    },
+    {
+      "category": "provenance",
+      "description": "The workbook documents controlling source versions, management correspondence, policy authority, and any required MCP reconciliation: the artifact substantively addresses 'controller-tied'",
+      "id": "sources__controller_tied",
+      "semantic": true,
+      "weight": 3
+    },
+    {
+      "category": "provenance",
+      "description": "The workbook documents controlling source versions, management correspondence, policy authority, and any required MCP reconciliation: the artifact substantively addresses 'management correspondence'",
+      "id": "sources__management_correspondence",
+      "semantic": true,
+      "weight": 3
+    },
+    {
+      "category": "provenance",
+      "description": "The workbook documents controlling source versions, management correspondence, policy authority, and any required MCP reconciliation: the artifact substantively addresses 'policy'",
+      "id": "sources__policy",
+      "semantic": true,
+      "weight": 3
+    },
+    {
+      "category": "controls",
+      "description": "The workbook exposes source, period, analytical basis, units, version, and model status: the artifact substantively addresses 'source'",
+      "id": "controls__source",
+      "semantic": true,
+      "weight": 3
+    },
+    {
+      "category": "controls",
+      "description": "The workbook exposes source, period, analytical basis, units, version, and model status: the artifact substantively addresses 'period'",
+      "id": "controls__period",
+      "semantic": true,
+      "weight": 3
+    },
+    {
+      "category": "controls",
+      "description": "The workbook exposes source, period, analytical basis, units, version, and model status: the artifact substantively addresses 'scenario'",
+      "id": "controls__scenario",
+      "semantic": true,
+      "weight": 3
+    },
+    {
+      "category": "controls",
+      "description": "The workbook exposes source, period, analytical basis, units, version, and model status: the artifact substantively addresses 'unit'",
+      "id": "controls__unit",
+      "semantic": true,
+      "weight": 3
+    },
+    {
+      "category": "controls",
+      "description": "The workbook exposes source, period, analytical basis, units, version, and model status: the artifact substantively addresses 'version'",
+      "id": "controls__version",
+      "semantic": true,
+      "weight": 3
+    },
+    {
+      "category": "controls",
+      "description": "The workbook exposes source, period, analytical basis, units, version, and model status: the artifact substantively addresses 'check'",
+      "id": "controls__check",
+      "semantic": true,
+      "weight": 3
+    },
+    {
+      "category": "controls",
+      "description": "The workbook exposes source, period, analytical basis, units, version, and model status: the artifact substantively addresses 'model status'",
+      "id": "controls__model_status",
+      "semantic": true,
+      "weight": 3
+    }
+  ],
+  "criterion_count": 130,
+  "deterministic_verifier": "environment/runtime/grading/corporate_finance.py",
+  "grading_contract": {
+    "basis": "a concise business objective and neutral working model require source-version reconciliation, unit-aware signed-backlog and capacity analysis, priority-based execution, contract and earnings consequences, and a management recommendation without announcing the hidden difficulty; exact magnitudes, date/project facts, and formula results retain deterministic hard gates while every editable metric, period, scenario, sign, label, and decision association receives criterion-scoped semantic review, so finite aliases cannot reject correct professional wording or rescue a right value attached to the wrong business fact; hidden tie-breaks are eliminated and all sections score proportionally without reward caps",
+    "effective_date": "2026-09-04",
+    "id": "task-035-authentic-backlog-capacity-decision-v13"
+  },
+  "grading_revision": "weighted-atomic-hybrid-v24-semantic-metric-association",
+  "integrity_verifier": "environment/runtime/grading/integrity.py",
+  "reference_contract": null,
+  "reward_policy": "environment/runtime/grading/rubric.py",
+  "reward_type": "weighted_partial_credit",
+  "semantic_criterion_count": 106,
+  "semantic_verifier": "environment/runtime/grading/production_semantic.py",
+  "slug": "complete-backlog-capacity-model",
+  "strict_pass": "all atomic criteria equal 1",
+  "task_id": "task_035",
+  "weight_total": 807
+}

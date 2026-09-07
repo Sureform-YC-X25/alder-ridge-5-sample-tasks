@@ -1,0 +1,117 @@
+{
+  "control_only_not_agent_visible": true,
+  "snapshot": "2026-06-30-pre-close",
+  "tasks": {
+    "task_035": {
+      "accounting_mcp_required": false,
+      "data_group": "planning",
+      "independent_fact_groups": [
+        "Capacity remediation",
+        "Execution authority",
+        "Monthly capacity",
+        "Project burn curve",
+        "Signed contract backlog",
+        "Management instructions and decision rules",
+        "Current-versus-prior source authority and reconciliation",
+        "Probability-plan versus full signed-commitment exposure",
+        "Capacity sign convention and approved response authority",
+        "Executable project sequencing and contractual consequences",
+        "Earnings bridge and executive recovery release decision"
+      ],
+      "mcp_anchor_types": [],
+      "minimum_source_artifacts": [
+        "Requests/7.4.26_0711am - FY27 plan first pass + branch submissions.eml",
+        "Requests/7.5.26_0618am - FY27 plan review follow-up.eml",
+        "Shared/Finance/FP&A/FY27 plan/FY27 planning assumptions - v6 controller tie.xlsx",
+        "Shared/Finance/FP&A/FY27 plan/FY27 planning assumptions - v4 branch draft.xlsx",
+        "Shared/Finance/FP&A/FY27 plan/FY27 steering committee notes - 7.3 DC.docx",
+        "Shared/Finance/FP&A/FY27 plan/FY27 planning definitions + scenario guardrails - APPROVED.pdf",
+        "Shared/Operations/Planning exports/CRM backlog service renewals + forecast history_6.30.csv",
+        "Shared/Finance/FP&A/Backlog/backlog burn + award pipeline_6.30 v6.xlsx",
+        "Shared/Operations/Project Controls/cash curves/major jobs cash curves_6.30 scenario B.xlsx",
+        "Shared/Finance/FP&A/Backlog/FY27 backlog burn and capacity - WORKING.xlsx"
+      ],
+      "native_fact_rows": 213,
+      "request_threads": [
+        "Requests/7.4.26_0711am - FY27 plan first pass + branch submissions.eml",
+        "Requests/7.5.26_0618am - FY27 plan review follow-up.eml"
+      ],
+      "shared_world_navigation": true,
+      "single_file_shortcut_designed_out": true,
+      "source_synthesis_task": true,
+      "standalone": true
+    },
+    "task_068": {
+      "accounting_mcp_required": true,
+      "data_group": "reporting",
+      "independent_fact_groups": [
+        "Approved lender metric basis",
+        "Board operating recovery review",
+        "Board recovery action register",
+        "Cash and capital",
+        "Credit metrics",
+        "Full-year outlook",
+        "Guidance combined stress",
+        "Guidance risk register",
+        "Guidance scenarios",
+        "IR comparability bridge",
+        "Investor KPI controls",
+        "Investor guidance policy",
+        "July operating action support",
+        "June billing cut-off activity",
+        "June forecast sensitivity record",
+        "Liquidity",
+        "Operating action evidence",
+        "Performance diagnostics",
+        "Published guidance record",
+        "Q2 actual export",
+        "Q2 approved plan",
+        "Q2 operating variance evidence",
+        "Quarterly KPIs",
+        "Management instructions and decision rules",
+        "Current-versus-prior source authority and reconciliation",
+        "Accounting and reporting tie",
+        "Combined downside and executable mitigation conversion",
+        "Guidance buffer, trigger, owners, and dated release gates"
+      ],
+      "mcp_anchor_types": [
+        "debt",
+        "ytd_revenue"
+      ],
+      "minimum_source_artifacts": [
+        "Requests/7.4.26_1344pm - Q2 board lender + IR refresh.eml",
+        "Requests/7.5.26_0812am - board review changes + source tie.eml",
+        "Shared/Finance/Reporting/2026/06 June/Q2 management reporting data book - v7 controller tie.xlsx",
+        "Shared/Finance/Reporting/2026/06 June/Q2 management reporting data book - v5 CFO scratch.xlsx",
+        "Shared/Finance/Reporting/2026/06 June/Q2 board + lender narrative review notes - 7.4 DC.docx",
+        "Shared/Finance/Investor Relations/Q2 working/KPI definitions + lender presentation policy.pdf",
+        "Shared/Finance/Reporting/2026/06 June/Q2 management reporting cube extract_7.2.csv",
+        "Shared/Finance/Reporting/Board/Q1 2026/Q1 board package - FINAL signed off.pptx",
+        "Shared/Finance/FP&A/FY26 plan + reforecast/FY26 Op Plan_BoardApproved_12.18.25_FINAL2.xlsx",
+        "Shared/Operations/Service/monthly KPI/service KPI pack source_6.30 - LT edits.xlsx",
+        "Shared/Finance/Close/2026/06 June/2 reconciliations/Vista billing batch history through 7.5.csv",
+        "Shared/Operations/Planning exports/Q2 operating evidence extract_7.5.csv",
+        "Shared/Operations/Planning exports/July owner support log_7.5.csv",
+        "Shared/Finance/Reporting/2026/06 June/Finance action review notes_7.5.csv",
+        "Shared/Finance/FP&A/FY26 plan + reforecast/June case sensitivity inputs_7.5.csv",
+        "Shared/Finance/FP&A/FY26 plan + reforecast/FY26 guidance cases_7.5.csv",
+        "Shared/Finance/Reporting/2026/06 June/FY26 outlook risk register_7.5.csv",
+        "Shared/Finance/Investor Relations/Q2 working/guidance interval settings_6.18.csv",
+        "Shared/Finance/Investor Relations/Q2 working/FY26 published range record_6.18.csv",
+        "Shared/Finance/Reporting/2026/06 June/June executive performance review - WORKING.pptx",
+        "Shared/Finance/FP&A/FY26 plan + reforecast/FY26 rolling forecast_v12 - pre WIP.xlsx",
+        "Shared/Finance/FP&A/FY26 plan + reforecast/department reforecast inputs - June pull.xlsx"
+      ],
+      "native_fact_rows": 333,
+      "request_threads": [
+        "Requests/7.4.26_1344pm - Q2 board lender + IR refresh.eml",
+        "Requests/7.5.26_0812am - board review changes + source tie.eml"
+      ],
+      "shared_world_navigation": true,
+      "single_file_shortcut_designed_out": true,
+      "source_synthesis_task": true,
+      "standalone": true
+    }
+  },
+  "world_id": "alder-ridge-mechanical-v2"
+}

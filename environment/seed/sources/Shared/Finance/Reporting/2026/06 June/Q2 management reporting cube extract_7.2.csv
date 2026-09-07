@@ -1,0 +1,43 @@
+source_ref,workstream,schedule,entity_or_item,period_or_as_of,case,metric_or_driver,numeric_value,text_or_decision,units,source_or_owner,source_date,system_tie
+RPT-00001,Four-quarter KPI history,Quarterly KPIs,Alder Ridge,2025-Q3,Approved case,Posted LTM revenue allocation,0.235,,ledger allocation factor,Finance operating schedule,2026-06-30,"Vista ERP P&L, 2025-07-01 through 2026-06-30; Revenue total"
+RPT-00002,Four-quarter KPI history,Quarterly KPIs,Alder Ridge,2025-Q3,Approved case,Prior-year comparable revenue,10200000.0,,USD,Finance operating schedule,2026-06-30,
+RPT-00003,Four-quarter KPI history,Quarterly KPIs,Alder Ridge,2025-Q3,Approved case,Acquisition revenue,0.0,,USD,Finance operating schedule,2026-06-30,
+RPT-00004,Four-quarter KPI history,Quarterly KPIs,Alder Ridge,2025-Q3,Approved case,Adjusted EBITDA margin,0.118,,decimal ratio,Finance operating schedule,2026-06-30,
+RPT-00005,Four-quarter KPI history,Quarterly KPIs,Alder Ridge,2025-Q3,Approved case,Operating cash flow,1650000.0,,USD,Finance operating schedule,2026-06-30,
+RPT-00006,Four-quarter KPI history,Quarterly KPIs,Alder Ridge,2025-Q3,Approved case,Capital expenditure,620000.0,,USD,Finance operating schedule,2026-06-30,
+RPT-00007,Four-quarter KPI history,Quarterly KPIs,Alder Ridge,2025-Q4,Approved case,Posted LTM revenue allocation,0.245,,ledger allocation factor,Finance operating schedule,2026-06-30,"Vista ERP P&L, 2025-07-01 through 2026-06-30; Revenue total"
+RPT-00008,Four-quarter KPI history,Quarterly KPIs,Alder Ridge,2025-Q4,Approved case,Prior-year comparable revenue,10600000.0,,USD,Finance operating schedule,2026-06-30,
+RPT-00009,Four-quarter KPI history,Quarterly KPIs,Alder Ridge,2025-Q4,Approved case,Acquisition revenue,0.0,,USD,Finance operating schedule,2026-06-30,
+RPT-00010,Four-quarter KPI history,Quarterly KPIs,Alder Ridge,2025-Q4,Approved case,Adjusted EBITDA margin,0.124,,decimal ratio,Finance operating schedule,2026-06-30,
+RPT-00011,Four-quarter KPI history,Quarterly KPIs,Alder Ridge,2025-Q4,Approved case,Operating cash flow,1770000.0,,USD,Finance operating schedule,2026-06-30,
+RPT-00012,Four-quarter KPI history,Quarterly KPIs,Alder Ridge,2025-Q4,Approved case,Capital expenditure,655000.0,,USD,Finance operating schedule,2026-06-30,
+RPT-00013,Four-quarter KPI history,Quarterly KPIs,Alder Ridge,2026-Q1,Approved case,Posted LTM revenue allocation,0.25,,ledger allocation factor,Finance operating schedule,2026-06-30,"Vista ERP P&L, 2025-07-01 through 2026-06-30; Revenue total"
+RPT-00014,Four-quarter KPI history,Quarterly KPIs,Alder Ridge,2026-Q1,Approved case,Prior-year comparable revenue,11000000.0,,USD,Finance operating schedule,2026-06-30,
+RPT-00015,Four-quarter KPI history,Quarterly KPIs,Alder Ridge,2026-Q1,Approved case,Acquisition revenue,420000.0,,USD,Finance operating schedule,2026-06-30,
+RPT-00016,Four-quarter KPI history,Quarterly KPIs,Alder Ridge,2026-Q1,Approved case,Adjusted EBITDA margin,0.13,,decimal ratio,Finance operating schedule,2026-06-30,
+RPT-00017,Four-quarter KPI history,Quarterly KPIs,Alder Ridge,2026-Q1,Approved case,Operating cash flow,1890000.0,,USD,Finance operating schedule,2026-06-30,
+RPT-00018,Four-quarter KPI history,Quarterly KPIs,Alder Ridge,2026-Q1,Approved case,Capital expenditure,690000.0,,USD,Finance operating schedule,2026-06-30,
+RPT-00019,Four-quarter KPI history,Quarterly KPIs,Alder Ridge,2026-Q2,Approved case,Posted LTM revenue allocation,0.27,,ledger allocation factor,Finance operating schedule,2026-06-30,"Vista ERP P&L, 2025-07-01 through 2026-06-30; Revenue total"
+RPT-00020,Four-quarter KPI history,Quarterly KPIs,Alder Ridge,2026-Q2,Approved case,Prior-year comparable revenue,11450000.0,,USD,Finance operating schedule,2026-06-30,
+RPT-00021,Four-quarter KPI history,Quarterly KPIs,Alder Ridge,2026-Q2,Approved case,Acquisition revenue,420000.0,,USD,Finance operating schedule,2026-06-30,
+RPT-00022,Four-quarter KPI history,Quarterly KPIs,Alder Ridge,2026-Q2,Approved case,Adjusted EBITDA margin,0.136,,decimal ratio,Finance operating schedule,2026-06-30,
+RPT-00023,Four-quarter KPI history,Quarterly KPIs,Alder Ridge,2026-Q2,Approved case,Operating cash flow,2010000.0,,USD,Finance operating schedule,2026-06-30,
+RPT-00024,Four-quarter KPI history,Quarterly KPIs,Alder Ridge,2026-Q2,Approved case,Capital expenditure,725000.0,,USD,Finance operating schedule,2026-06-30,
+RPT-00041,Q2 close performance,Q2 actual export,Construction,2026-04,Approved case,Posted YTD revenue allocation,0.09200800000000002,,ledger allocation factor,Finance operating schedule,2026-06-30,"Vista ERP P&L, 2026-01-01 through 2026-06-30; Revenue total"
+RPT-00042,Q2 close performance,Q2 actual export,Construction,2026-04,Approved case,Adjusted EBITDA margin,0.095,,decimal ratio,Finance operating schedule,2026-06-30,
+RPT-00045,Q2 close performance,Q2 actual export,Construction,2026-05,Approved case,Posted YTD revenue allocation,0.09794400000000003,,ledger allocation factor,Finance operating schedule,2026-06-30,"Vista ERP P&L, 2026-01-01 through 2026-06-30; Revenue total"
+RPT-00046,Q2 close performance,Q2 actual export,Construction,2026-05,Approved case,Adjusted EBITDA margin,0.099,,decimal ratio,Finance operating schedule,2026-06-30,
+RPT-00049,Q2 close performance,Q2 actual export,Construction,2026-06,Approved case,Posted YTD revenue allocation,0.10684800000000001,,ledger allocation factor,Finance operating schedule,2026-06-30,"Vista ERP P&L, 2026-01-01 through 2026-06-30; Revenue total"
+RPT-00050,Q2 close performance,Q2 actual export,Construction,2026-06,Approved case,Adjusted EBITDA margin,0.10300000000000001,,decimal ratio,Finance operating schedule,2026-06-30,
+RPT-00053,Q2 close performance,Q2 actual export,Service,2026-04,Approved case,Posted YTD revenue allocation,0.04600400000000001,,ledger allocation factor,Finance operating schedule,2026-06-30,"Vista ERP P&L, 2026-01-01 through 2026-06-30; Revenue total"
+RPT-00054,Q2 close performance,Q2 actual export,Service,2026-04,Approved case,Adjusted EBITDA margin,0.168,,decimal ratio,Finance operating schedule,2026-06-30,
+RPT-00057,Q2 close performance,Q2 actual export,Service,2026-05,Approved case,Posted YTD revenue allocation,0.048972000000000016,,ledger allocation factor,Finance operating schedule,2026-06-30,"Vista ERP P&L, 2026-01-01 through 2026-06-30; Revenue total"
+RPT-00058,Q2 close performance,Q2 actual export,Service,2026-05,Approved case,Adjusted EBITDA margin,0.17200000000000001,,decimal ratio,Finance operating schedule,2026-06-30,
+RPT-00061,Q2 close performance,Q2 actual export,Service,2026-06,Approved case,Posted YTD revenue allocation,0.053424000000000006,,ledger allocation factor,Finance operating schedule,2026-06-30,"Vista ERP P&L, 2026-01-01 through 2026-06-30; Revenue total"
+RPT-00062,Q2 close performance,Q2 actual export,Service,2026-06,Approved case,Adjusted EBITDA margin,0.17600000000000002,,decimal ratio,Finance operating schedule,2026-06-30,
+RPT-00065,Q2 close performance,Q2 actual export,Controls,2026-04,Approved case,Posted YTD revenue allocation,0.026288,,ledger allocation factor,Finance operating schedule,2026-06-30,"Vista ERP P&L, 2026-01-01 through 2026-06-30; Revenue total"
+RPT-00066,Q2 close performance,Q2 actual export,Controls,2026-04,Approved case,Adjusted EBITDA margin,0.142,,decimal ratio,Finance operating schedule,2026-06-30,
+RPT-00069,Q2 close performance,Q2 actual export,Controls,2026-05,Approved case,Posted YTD revenue allocation,0.027984000000000002,,ledger allocation factor,Finance operating schedule,2026-06-30,"Vista ERP P&L, 2026-01-01 through 2026-06-30; Revenue total"
+RPT-00070,Q2 close performance,Q2 actual export,Controls,2026-05,Approved case,Adjusted EBITDA margin,0.146,,decimal ratio,Finance operating schedule,2026-06-30,
+RPT-00073,Q2 close performance,Q2 actual export,Controls,2026-06,Approved case,Posted YTD revenue allocation,0.030528,,ledger allocation factor,Finance operating schedule,2026-06-30,"Vista ERP P&L, 2026-01-01 through 2026-06-30; Revenue total"
+RPT-00074,Q2 close performance,Q2 actual export,Controls,2026-06,Approved case,Adjusted EBITDA margin,0.15,,decimal ratio,Finance operating schedule,2026-06-30,
