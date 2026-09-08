@@ -31,7 +31,7 @@ _SEMANTIC_CREDENTIALS = {
     "openai_api_key": os.environ.pop("OPENAI_API_KEY", None),
 }
 
-env = Environment("alder-ridge-5-sample-tasks")
+env = Environment("sample-alder-ridge-corporate-finance-environment")
 WORKSPACE = IsolatedWorkspace(
     RUNTIME_ROOT,
     mounts=agent_runtime_mounts(),
