@@ -157,24 +157,6 @@
       "discoverability": "Board-approved plan; not an accounting actual."
     },
     {
-      "path": "Shared/Finance/FP&A/FY26 plan + reforecast/FY26 rolling forecast_v12 - pre WIP.xlsx",
-      "type": "xlsx",
-      "bytes": 13319,
-      "sha256": "af52aadb93a221ef583d9aa00caf938fe956184aa324e2c7248c3bc591f85039",
-      "version_status": "stale-working",
-      "permitted_use": "refresh required",
-      "discoverability": "Filename exposes its pre-close cutoff; request e-mail names the required current sources."
-    },
-    {
-      "path": "Shared/Finance/FP&A/FY26 plan + reforecast/department reforecast inputs - June pull.xlsx",
-      "type": "xlsx",
-      "bytes": 13276,
-      "sha256": "637dddc8e52bbc182d4da7be3d40f816c2ce6cc527923260742a78dc7bd23847",
-      "version_status": "current-support",
-      "permitted_use": "use for its stated purpose and cutoff",
-      "discoverability": "Purpose, date, and source/cutoff are stated in the artifact."
-    },
-    {
       "path": "Shared/Finance/FP&A/FY27 plan/FY27 planning assumptions - v4 branch draft.xlsx",
       "type": "xlsx",
       "bytes": 35939,

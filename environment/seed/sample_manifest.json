@@ -16,7 +16,7 @@
     "task_068"
   ],
   "snapshot": "2026-06-30-pre-close",
-  "source_file_count": 53,
+  "source_file_count": 51,
   "source_files": [
     "Requests/7.1.26_822am - Fwd_ wip close need today.eml",
     "Requests/7.2.26_1027am - Q2 bank compliance package.eml",
@@ -37,9 +37,7 @@
     "Shared/Finance/FP&A/Backlog/backlog burn + award pipeline_6.30 v6.xlsx",
     "Shared/Finance/FP&A/FY26 plan + reforecast/FY26 Op Plan_BoardApproved_12.18.25_FINAL2.xlsx",
     "Shared/Finance/FP&A/FY26 plan + reforecast/FY26 guidance cases_7.5.csv",
-    "Shared/Finance/FP&A/FY26 plan + reforecast/FY26 rolling forecast_v12 - pre WIP.xlsx",
     "Shared/Finance/FP&A/FY26 plan + reforecast/June case sensitivity inputs_7.5.csv",
-    "Shared/Finance/FP&A/FY26 plan + reforecast/department reforecast inputs - June pull.xlsx",
     "Shared/Finance/FP&A/FY27 plan/FY27 planning assumptions - v4 branch draft.xlsx",
     "Shared/Finance/FP&A/FY27 plan/FY27 planning assumptions - v6 controller tie.xlsx",
     "Shared/Finance/FP&A/FY27 plan/FY27 planning definitions + scenario guardrails - APPROVED.pdf",
@@ -96,7 +94,7 @@
       "slug": "complete-backlog-capacity-model"
     },
     "task_068": {
-      "grading_revision": "weighted-atomic-hybrid-v29-professional-plan-and-ytd-association",
+      "grading_revision": "weighted-atomic-hybrid-v30-recursive-ppt-evidence",
       "prompt_sha256": "c195103cee0a52c1dfd3a0fa84098d72b2725672c5067171c62cdf323fbf45ae",
       "slug": "complete-executive-performance-deck"
     }

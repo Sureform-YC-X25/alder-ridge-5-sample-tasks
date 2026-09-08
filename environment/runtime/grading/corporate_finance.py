@@ -569,7 +569,7 @@ def _pptx_slide_evidence_cached(path_text: str, _mtime_ns: int, _size: int, slid
             continue
         slide = presentation.slides[slide_number - 1]
         entries: list[str] = []
-        for shape in slide.shapes:
+        for shape in _task_068_leaf_shapes(slide.shapes):
             if hasattr(shape, 'text') and str(shape.text or '').strip():
                 entries.append(str(shape.text).strip())
             if getattr(shape, 'has_table', False):
@@ -1105,6 +1105,25 @@ def _task_068_slide_numbers(criterion_id: str) -> tuple[int, ...]:
         return (9,)
     return tuple(range(1, 10))
 
+def _task_068_leaf_shapes(shapes: Iterable[Any]) -> Iterable[Any]:
+    """Yield authored leaf shapes, including descendants of grouped shapes."""
+    for shape in shapes:
+        child_shapes = getattr(shape, 'shapes', None)
+        if child_shapes is not None:
+            yield from _task_068_leaf_shapes(child_shapes)
+        else:
+            yield shape
+
+def _task_068_shape_text_fragments(shapes: Iterable[Any]) -> tuple[str, ...]:
+    """Return visible text from text frames, native tables, and groups."""
+    fragments: list[str] = []
+    for shape in _task_068_leaf_shapes(shapes):
+        if getattr(shape, 'has_table', False):
+            fragments.extend((str(cell.text).strip() for row in shape.table.rows for cell in row.cells if str(cell.text or '').strip()))
+        elif hasattr(shape, 'text') and str(shape.text or '').strip():
+            fragments.append(str(shape.text).strip())
+    return tuple(fragments)
+
 def _task_068_slides_changed(path: Path, artifact_relative: str, slide_numbers: Iterable[int]) -> bool:
     seed_path = SEED_WORKSPACE / artifact_relative
     if not seed_path.is_file():
@@ -1122,8 +1141,8 @@ def _task_068_slides_changed_cached(path_text: str, _path_mtime_ns: int, _path_s
     for slide_number in slide_numbers:
         if slide_number > len(current.slides) or slide_number > len(seed.slides):
             return False
-        current_text = _normalize('\n'.join((str(shape.text) for shape in current.slides[slide_number - 1].shapes if hasattr(shape, 'text') and str(shape.text or '').strip())))
-        seed_text = _normalize('\n'.join((str(shape.text) for shape in seed.slides[slide_number - 1].shapes if hasattr(shape, 'text') and str(shape.text or '').strip())))
+        current_text = _normalize('\n'.join(_task_068_shape_text_fragments(current.slides[slide_number - 1].shapes)))
+        seed_text = _normalize('\n'.join(_task_068_shape_text_fragments(seed.slides[slide_number - 1].shapes)))
         if current_text != seed_text:
             return True
     return False
@@ -1711,7 +1730,8 @@ def _task_068_local_contexts_cached(path_text: str, _mtime_ns: int, _size: int, 
         if slide_number < 1 or slide_number > len(presentation.slides):
             continue
         slide = presentation.slides[slide_number - 1]
-        text_shapes = [shape for shape in slide.shapes if hasattr(shape, 'text') and str(shape.text or '').strip()]
+        leaf_shapes = list(_task_068_leaf_shapes(slide.shapes))
+        text_shapes = [shape for shape in leaf_shapes if hasattr(shape, 'text') and str(shape.text or '').strip()]
         ordered = sorted(text_shapes, key=lambda shape: (int(shape.top), int(shape.left)))
         texts = [str(shape.text).strip() for shape in ordered]
         contexts.extend(texts)
@@ -1732,7 +1752,7 @@ def _task_068_local_contexts_cached(path_text: str, _mtime_ns: int, _size: int, 
                 row_label = min(left_candidates, key=lambda candidate: int(candidate.left))
                 header = max(above_candidates, key=lambda candidate: int(candidate.top))
                 contexts.append(' | '.join((str(row_label.text).strip(), str(header.text).strip(), str(shape.text).strip())))
-        for shape in slide.shapes:
+        for shape in leaf_shapes:
             if not getattr(shape, 'has_table', False):
                 continue
             rows = [[cell.text.strip() for cell in row.cells] for row in shape.table.rows]

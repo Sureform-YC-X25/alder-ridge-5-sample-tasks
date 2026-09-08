@@ -83,7 +83,7 @@ EXPECTED = {
     "task_068": {
         "slug": "complete-executive-performance-deck",
         "prompt_sha256": "c195103cee0a52c1dfd3a0fa84098d72b2725672c5067171c62cdf323fbf45ae",
-        "grading_revision": "weighted-atomic-hybrid-v29-professional-plan-and-ytd-association",
+        "grading_revision": "weighted-atomic-hybrid-v30-recursive-ppt-evidence",
         "catalog_revision": "task-068-authentic-executive-performance-decision-v21",
         "criteria": 88,
         "semantic": 87,
@@ -96,7 +96,7 @@ EXPECTED_ACCOUNTING_SHA256 = (
 EXPECTED_CANONICAL_SOURCE_COMMIT = (
     "d03ed15caa1f66008ab767fbd203f656a32425eb"
 )
-EXPECTED_SOURCE_COUNT = 53
+EXPECTED_SOURCE_COUNT = 51
 TASK_FILE_SET = {
     "gold.json",
     "prompt.md",
