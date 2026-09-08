@@ -198,12 +198,17 @@ TASK_GRADING_REVISIONS = {'task_001': {'id': 'task-001-conditional-credit-effect
                        'sign, label, and decision association receives criterion-scoped semantic '
                        'review, so finite aliases cannot reject correct professional wording or '
                        'rescue a right value attached to the wrong business fact; criterion '
-                       'evidence now preserves the visible table headers needed to interpret '
-                       'formula-linked totals under ordinary professional labels; hidden '
-                       'tie-breaks are eliminated and all sections score proportionally without '
-                       'reward caps',
+                       'evidence preserves every preferred-sheet monthly formula row before '
+                       'unrelated schedules, includes visible table headers, and supplies ordinary '
+                       'source-linked scenario-basis context so risk-adjusted probability-plan and '
+                       'full signed-backlog gross-commitment work are judged by meaning rather than '
+                       'literal labels; the controlling case must distinguish those two bases, and '
+                       'an execution-portfolio revenue bridge cannot be rescued by an unrelated '
+                       'zero-valued probability-plan source tie; hidden calculation sheets cannot '
+                       'crowd visible schedules out of the semantic packet; hidden tie-breaks are '
+                       'eliminated and all sections score proportionally without reward caps',
               'effective_date': '2026-09-08',
-              'id': 'task-035-authentic-backlog-capacity-decision-v14'},
+              'id': 'task-035-authentic-backlog-capacity-decision-v15'},
  'task_068': {'basis': 'a concise executive request requires independent cross-source '
                        'reconciliation and judgment without announcing the source conflicts or '
                        'guidance chain; the current controller book remains a reporting '
