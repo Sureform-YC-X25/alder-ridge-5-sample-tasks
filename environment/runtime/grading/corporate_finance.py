@@ -705,6 +705,20 @@ def _task_035_numeric_literal_matches(literal: str, label: str, expected: float,
     return _close(abs(displayed), abs(float(expected)), abs_tol=max(0.02, abs(float(expected)) * 1e-06, rounding_tolerance + 1e-12), rel_tol=0.0)
 
 def _task_035_render_fact_row(sheet, value_sheet, row_number: int) -> str:
+    header_rows: list[tuple[int, list[str]]] = []
+    for candidate_row in range(1, row_number):
+        header_cells: list[str] = []
+        populated_cells = 0
+        for cell in sheet[candidate_row]:
+            if cell.value not in (None, ''):
+                populated_cells += 1
+            if isinstance(cell.value, str) and not cell.value.startswith('='):
+                value = cell.value.strip()
+                if value:
+                    header_cells.append(f'{cell.coordinate}={value!r}')
+        if len(header_cells) >= 2 and len(header_cells) * 2 >= populated_cells:
+            header_rows.append((candidate_row, header_cells))
+    header_context = '\n'.join((f'SHEET {sheet.title} HEADER ROW {candidate_row}: ' + ' | '.join(header_cells) for candidate_row, header_cells in header_rows[-3:]))
     parts: list[str] = []
     for cell in sheet[row_number]:
         cached = value_sheet[cell.coordinate].value
@@ -717,7 +731,28 @@ def _task_035_render_fact_row(sheet, value_sheet, row_number: int) -> str:
             parts.append(f'{cell.coordinate}=FORMULA({formula})=>{cached!r}')
         else:
             parts.append(f'{cell.coordinate}={cell.value!r}')
-    return f'SHEET {sheet.title} ROW {row_number}: ' + ' | '.join(parts)
+    fact_row = f'SHEET {sheet.title} ROW {row_number}: ' + ' | '.join(parts)
+    return f'{header_context}\n{fact_row}' if header_context else fact_row
+
+def _task_035_exact_text_candidate_matches(actual: Any, expected: Any) -> bool:
+    """Recognize objective project IDs and ordinary year-month displays."""
+    if actual in (None, ''):
+        return False
+    expected_text = str(expected).strip()
+    actual_text = str(actual).strip()
+    if date_matches(actual, expected) or _normalize(actual) == _normalize(expected) or expected_text.casefold() in actual_text.casefold():
+        return True
+    month_match = re.fullmatch(r'(\d{4})-(\d{2})', expected_text)
+    if not month_match:
+        return False
+    year, month_number = month_match.groups()
+    month_index = int(month_number)
+    if not 1 <= month_index <= 12:
+        return False
+    month_names = ('january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december')
+    month_name = month_names[month_index - 1]
+    normalized_actual = _normalize(actual_text)
+    return year in normalized_actual and any((token in normalized_actual for token in (month_name, month_name[:3], month_number)))
 
 def _task_035_semantic_fact_evidence(workbook, values, label: str, expected: Any, *, require_formula: bool) -> tuple[str, bool, str]:
     """Separate objective Task035 facts from editable business association.
@@ -773,9 +808,7 @@ def _task_035_semantic_fact_evidence(workbook, values, label: str, expected: Any
                     if not matched and isinstance(cached, str):
                         matched = any((_task_035_numeric_literal_matches(literal, label, float(expected), context=row_context) for literal in _NUMERIC_LITERAL_PATTERN.findall(cached)))
                 elif exact_text and cached not in (None, ''):
-                    expected_text = str(expected).casefold()
-                    actual_text = str(cached).casefold()
-                    matched = date_matches(cached, expected) or _normalize(cached) == _normalize(expected) or expected_text in actual_text
+                    matched = _task_035_exact_text_candidate_matches(cached, expected)
                 if matched:
                     matched_coordinates.append(cell.coordinate)
             if matched_coordinates:
@@ -925,6 +958,13 @@ def _task_035_formula_row_evidence(workbook, values, criterion_id: str) -> tuple
     return (submitted, completed, gate_evidence)
 _TASK_068_SLIDES_BY_CRITERION = {'preservation__title': (1,), 'headline_values__guidance_release_status': (2, 7, 8), 'headline_values__guidance_protection_portfolio_treatment': (2, 4, 7, 8, 9), 'headline_values__largest_downside_driver': (8,), 'headline_values__guidance_update_required': (2, 7, 8), 'narrative__executive_summary': (2,), 'narrative__revenue': (3, 5), 'narrative__ebitda': (4, 5), 'narrative__cash': (6,), 'narrative__backlog': (7,), 'narrative__outlook': (7,), 'narrative__risk': (8,), 'narrative__owner': (8,), 'narrative__action': (7, 8), 'controls__numerical_tie_out': (3, 4, 5, 6, 7, 9), 'controls__revenue_bridge': (3, 5, 9), 'controls__ebitda_bridge': (4, 5, 9), 'controls__cash_roll_forward': (6, 9), 'controls__latest_forecast': (7, 8, 9)}
 _TASK_068_NUMERIC_ASSOCIATION_RULES = {'service_labor_productivity_impact': 'This is the gross adverse Q2 labor-productivity impact derived from excess paid hours and the applicable loaded hourly cost. Evaluate it independently from the smaller supported or probability-adjusted recovery action, which may appear elsewhere in the same deck. Accept normal board rounding such as $0.29M for the verified $285,000 gross impact when the excess-hours productivity context and adverse role are clear. Reject a value presented only as mitigation or recovery.', 'latest_full_year_revenue_outlook': 'This is the current close-adjusted FY26 revenue outlook, after the controller-approved June close entry. It is distinct from the earlier June reforecast base. Reject a deck that presents the unadjusted June base as the current outlook, even if normal display rounding makes the two values pass the broad numeric-presence gate.', 'q2_posted_ytd_revenue_reconciliation_check': 'This zero check is supported only when the raw reporting-cube mapping and the controller-approved June revenue entries bridge to the current Q2 reporting basis. Accept an explicitly tied/no-plug bridge showing the raw Q2 cube allocation plus the approved close entries equals the current Q2 reporting amount; the separately scored current Q2 share need not be repeated. Do not confuse a disclosed GAAP-posted Q2 amount on a pre-June-WIP posting basis with an unresolved difference in this management-reporting bridge. Reject a zero or TIED statement based only on the earlier cube allocation, or any bridge that omits the close entries.', 'q2_operating_cash_flow_plan': 'This is the approved Board-plan Q2 operating-cash-flow component, not actual Q2 operating cash flow. The expected amount may be shown monthly or as a Q2 total, but it must be unmistakably associated with the plan scenario. Reject the expected amount when the deck presents or uses it as the actual cash-flow component.', 'q2_capital_expenditure_plan': 'This is the approved Board-plan Q2 capital-expenditure component, not actual Q2 capital expenditure. The expected amount may be shown as a cash outflow or positive spend magnitude, but it must be unmistakably associated with the plan scenario. Reject the expected amount when the deck presents or uses it as the actual cash-flow component.', 'q2_free_cash_flow_plan_derived': 'This is the mathematically derived Board-plan Q2 free cash flow: plan operating cash flow less plan capital expenditure. It is not actual Q2 free cash flow and it is distinct from the separately stated plan free-cash-flow line. Reject the expected amount when it is presented or used as actual free cash flow, or merely appears as an unlabeled bridge result.', 'q2_free_cash_flow_plan_discrepancy': 'This is the internal inconsistency within the approved plan records: stated plan free cash flow less the free cash flow derived from the plan operating-cash-flow and capex components. It is not the actual-versus-plan performance variance. Reject the expected magnitude when it is presented as actual free cash flow versus plan, even if the arithmetic uses the same two displayed amounts.', 'guidance_update_trigger': 'This is the formal-update threshold: the active published adjusted-EBITDA low end plus the signed minimum release buffer. The expected amount must be labeled or used as that trigger, threshold, or required headroom boundary. Reject the same number when it appears only as the upper endpoint of a recommended EBITDA range or in another unrelated role.'}
+_TASK_068_NUMERIC_ASSOCIATION_RULES.update({
+    'q2_approved_plan_adjusted_ebitda': 'Judge the local Q2 actual-versus-plan schedule together with its cited planning authority. Accept any concise professional plan, budget, target, or AOP heading for adjusted EBITDA when the surrounding schedule and source context establish the approved basis and no competing GAAP or other EBITDA basis is shown. Do not require every modifier to be repeated in the value cell or column heading.',
+    'construction_q2_approved_plan_adjusted_ebitda': 'For the Construction row, judge the Q2 actual-versus-plan schedule together with its cited planning authority. Accept any concise professional plan, budget, target, or AOP heading for adjusted EBITDA when context establishes the approved basis and no competing EBITDA basis is shown.',
+    'service_q2_approved_plan_adjusted_ebitda': 'For the Service row, judge the Q2 actual-versus-plan schedule together with its cited planning authority. Accept any concise professional plan, budget, target, or AOP heading for adjusted EBITDA when context establishes the approved basis and no competing EBITDA basis is shown.',
+    'controls_q2_approved_plan_adjusted_ebitda': 'For the Controls row, judge the Q2 actual-versus-plan schedule together with its cited planning authority. Accept any concise professional plan, budget, target, or AOP heading for adjusted EBITDA when context establishes the approved basis and no competing EBITDA basis is shown.',
+    'posted_ytd_revenue': 'At a June 30 reporting date, accept ordinary cumulative-period wording such as YTD, H1, first half, or six months for revenue when the slide or cited source/control context identifies the actuals as posted accounting and no conflicting reporting basis is shown. Do not require `posted` and the period label to be repeated beside the number.',
+})
 
 def _task_068_slide_numbers(criterion_id: str) -> tuple[int, ...]:
     if criterion_id in _TASK_068_SLIDES_BY_CRITERION:
