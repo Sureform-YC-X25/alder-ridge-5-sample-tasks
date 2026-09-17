@@ -83,8 +83,8 @@ EXPECTED = {
     "task_068": {
         "slug": "complete-executive-performance-deck",
         "prompt_sha256": "c195103cee0a52c1dfd3a0fa84098d72b2725672c5067171c62cdf323fbf45ae",
-        "grading_revision": "weighted-atomic-hybrid-v30-recursive-ppt-evidence",
-        "catalog_revision": "task-068-authentic-executive-performance-decision-v21",
+        "grading_revision": "weighted-atomic-hybrid-v36-stable-canonical-plan-cells",
+        "catalog_revision": "task-068-authentic-executive-performance-decision-v22",
         "criteria": 88,
         "semantic": 87,
         "weight": 628,
