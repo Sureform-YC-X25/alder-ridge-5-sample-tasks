@@ -22,7 +22,7 @@ environment/
     accounting.db       simulated company accounting system
     ACCOUNTING_MCP.md   accounting records and MCP tool reference
     controls/           
-    sources/            
+    sources/            seed files (spreadsheets, documents, etc.)
 
 tasks/
   <task-slug>/
